@@ -4,7 +4,7 @@
 
 * [什么是Docker?](docker/docker-conception)
 * [Docker简介](docker/docker-introduce)
-* [docker安装](docker-install)
+* [docker安装](docker/docker-install)
 
 ## k8s
 

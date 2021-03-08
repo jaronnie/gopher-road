@@ -30,6 +30,10 @@ sudo systemctl start docker
 
 如果你是非root用户，可以将用户名添加到docker组中，使得普通用户可以直接使用。
 
+```shell
+sudo usermod -aG docker $USER
+```
+
 ## windows上安装
 
 官方提供了安装包
@@ -38,7 +42,7 @@ https://hub.docker.com/editions/community/docker-ce-desktop-windows
 
 但是仅适用于 Windows 10 操作系统专业版、企业版、教育版和部分家庭版！
 
-如果存在问题，可以使用toolbox等工具进行安装
+如果存在问题，可以使用toolbox等工具进行安装。在此不作介绍，建议使用linux环境进行学习。
 
 ## mac上安装
 

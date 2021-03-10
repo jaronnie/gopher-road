@@ -1,13 +1,15 @@
 # 消息队列之rabbit mq
 
+> 本文来自我的中间件教程
+>
+> 
+
 在此之前我们必须理解几个概念。
 
 * 什么是中间件？
 * 什么是单体架构以及什么是分布式架构？
 * 什么是同步调用？什么是异步调用？
 * 什么是消息队列？
-
-
 
 ## 中间件
 
@@ -126,6 +128,8 @@ rabbit mq和邮局的主要区别在于它不处理纸张，而是接受、存�
 
 它是一个生产消费模型。生产即是发送消息，消费即接受消息。
 
+支持多个协议，常用的协议是amqp。
+
 ### rabbit mq入门之hello world
 
 在下图中，“ P”是我们的生产者，“ C”是我们的消费者。中间的框是一个队列——rabbit mq代表消费者保存的消息缓冲区。
@@ -140,3 +144,157 @@ P可以认为是一个服务端，C可以认为是一个客户端。
 
 上篇我们介绍了Docker，所以我们直接使用Docker来运行rabbit mq容器。
 
+```shell
+docker run -d --restart=always --name myrabbitmq -p 5672:5672  rabbitmq
+# -d 表示后台运行
+# --restart=always 表示自动重启
+# --name myrabbitmq 指定容器名字
+# -p 5672:5672 暴露容器端口号5672，并映射到宿主机端口5672
+# rabbitmq 使用官方镜像rabbitmq
+```
+
+![image-20210310193558444](http://picture.nj-jay.com/image-20210310193558444.png)
+
+接下来我们安装golang rabbitmq客户端 amqp
+
+```shell
+go get github.com/streadway/amqp
+```
+
+#### 发送消息
+
+* 连接到rabbitmq服务器
+* 创建一个通道
+* 声明队列
+* 将消息发送到队列中
+
+```go
+package main
+import (
+	"fmt"
+	"github.com/streadway/amqp"
+	"log"
+)
+func main() {
+	// 连接rabbitmq服务器
+	conn, err := amqp.Dial("amqp://guest:guest@nj-jay.com:5672")
+	failOnError(err, "连接rabbitmq失败")
+	defer conn.Close()
+	//创建一个通道
+	ch, err := conn.Channel()
+	defer ch.Close()
+	failOnError(err, "创建ch通道失败")
+	//声明要发送到的队列 "hello"
+	q, err := ch.QueueDeclare(
+		"hello",
+		false,
+		false,
+		false,
+		false,
+		nil,
+	)
+	//消息
+	message := "hello world"
+	//将消息发送到声明的队列
+	err = ch.Publish(
+		"",
+		q.Name,
+		false,
+		false,
+		amqp.Publishing{
+			ContentType: "text/plain",
+			Body: []byte(message),
+		},
+	)
+	failOnError(err, "发送失败")
+	fmt.Println("发送成功")
+}
+func failOnError(err error, msg string) {
+	if err != nil {
+		log.Fatalf("%s: %s", msg, err)
+	}
+}
+```
+
+每当我们运行该代码，运行rabbitmq的容器将会接收到相应。
+
+使用docker logs -f myrabbitmq就可以查看
+
+![image-20210310195251559](http://picture.nj-jay.com/image-20210310195251559.png)
+
+每运行一次，将建立连接，然后运行完毕连接断开。
+
+接下来，我们应该要从rabbitmq中间件中获取消息。
+
+#### 接收消息
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/streadway/amqp"
+	"log"
+)
+func main() {
+	// 连接到rabbitmq中
+	conn, err := amqp.Dial("amqp://guest:guest@nj-jay.com:5672")
+	failOnError(err, "Failed to connect to RabbitMQ")
+	defer conn.Close()
+	//创建一个通道用于与发送消息的通道连接
+	ch, err := conn.Channel()
+	failOnError(err, "创建通道失败")
+	//声明队列
+	q, err := ch.QueueDeclare(
+		"hello",
+		false,
+		false,
+		false,
+		false,
+		nil,
+	)
+	failOnError(err, "Failed to declare a queue")
+	//创建获取消息的通道
+	msgs, err := ch.Consume(
+		q.Name,
+		"",
+		true,
+		false,
+		false,
+		false,
+		nil,
+	)
+	failOnError(err, "注册获取消息的通道失败")
+	//使用goroutine获取消息，并一直阻塞在这里，不让通道退出
+	exit := make(chan bool, 1)
+	go func() {
+		for m := range msgs {
+			fmt.Println(string(m.Body))
+		}
+	}()
+	<- exit
+}
+func failOnError(err error, msg string) {
+	if err != nil {
+		log.Fatalf("%s: %s", msg, err)
+	}
+}
+```
+
+我们运行接收消息的程序，再运行发送消息的命令。可以看到正常接收到消息。
+
+或者我们先运行发送消息，再运行接收消息，依然可以正常接收到消息。邮箱的机制保证了消息传递的可靠性。
+
+![image-20210310202348798](http://picture.nj-jay.com/image-20210310202348798.png)
+
+### rabbit mq重大意义
+
+在一个项目中，通过这个中间件，我们可以用多种语言同时开发。
+
+如支付服务采用java，查询业务采用Go，修改业务采用python。
+
+并能保证消息消息传递和接收的可靠性。
+
+并且是异步调用的，不仅效率高，而且高并发性能好，在微服务架构中非常的适合。
+
+因此在开发大型项目中，rabbit mq经常使用。

@@ -139,3 +139,34 @@ db.student.find({"age":21}) # 查询年龄等于21
 | 大于或等于 | `{<key>:{$gte:<value>}}` | `db.studentl.find({"age":{$gte:21}}).pretty()` | `where age >= 21` |
 | 不等于     | `{<key>:{$ne:<value>}}`  | `db.student.find({"age":{$ne:21}}).pretty()`   | `where age != 50` |
 
+
+
+## go操作mongodb
+
+* 连接数据库
+
+```go
+package main
+import (
+	"context"
+	"fmt"
+	"log"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+)
+func main() {
+	// 设置客户端连接配置
+	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+	// 连接到MongoDB
+	client, err := mongo.Connect(context.TODO(), clientOptions)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// 检查连接
+	err = client.Ping(context.TODO(), nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Connected to MongoDB!")
+}
+```

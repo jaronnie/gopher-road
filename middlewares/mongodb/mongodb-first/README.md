@@ -143,7 +143,7 @@ db.student.find({"age":21}) # 查询年龄等于21
 
 ## go操作mongodb
 
-* 连接数据库
+* 连接mongo
 
 ```go
 package main
@@ -164,9 +164,85 @@ func main() {
 	}
 	// 检查连接
 	err = client.Ping(context.TODO(), nil)
+    defer client.Disconnect(context.TODO())
 	if err != nil {
 		log.Fatal(err)
 	}
 	fmt.Println("Connected to MongoDB!")
 }
 ```
+
+* 处理数据库hello中的集合student
+
+```go
+//指定获取要操作的集合
+collection := client.Database("hello").Collection("student")
+```
+
+* 插入一条文档
+
+```go
+type Student struct {
+	Name string
+	Age int32
+}
+s1 := Student{
+		Name : "zyf",
+		Age  : 21,
+	}
+res, err := collection.InsertOne(context.TODO(), s1)
+if err != nil {
+	log.Fatal(err)
+}
+```
+
+* 插入多条文档
+
+```go
+s2 := Student{
+		Name: "gocloudcoder",
+		Age: 22,
+	}
+s3 := Student{
+	Name: "hs",
+	Age: 21,
+}
+resm, err := collection.InsertMany(context.TODO(), []interface{}{s2, s3})
+if err != nil {
+	fmt.Println(err)
+}
+```
+
+* 更新文档
+
+```go
+filter := bson.D{{"name", "njnj"}}
+update := bson.M{"$set":Student{Name: "njnjnj"}}
+one, err := collection.UpdateOne(context.TODO(), filter, update)
+if err != nil {
+	log.Fatal(err)
+}
+```
+
+* 查询文档
+
+```go
+var stu Student
+err = collection.FindOne(context.TODO(), filter).Decode(&stu)
+if err != nil {
+	log.Fatal(err)
+}
+fmt.Println(stu)
+```
+
+* 删除文档
+
+```go
+filter := bson.D{{"name", "zyf"}}
+res, err := collection.DeleteOne(context.TODO(), filter)
+if err != nil {
+	log.Fatal(err)
+}
+fmt.Println(res.DeletedCount)
+```
+

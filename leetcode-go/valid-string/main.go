@@ -24,6 +24,9 @@ func isValid(s string) bool {
 		} else if string(v) == "{" {
 			stack = append(stack, "}")
 		} else {
+			if len(stack) == 0 {
+				return false
+			}
 			if stack[len(stack)-1] != string(v) {
 				return false
 			}

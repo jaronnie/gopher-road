@@ -6,7 +6,7 @@
 
 qq交流群：1046260719
 
-## 目录
+## 目录结构
 
 * [从基础到开发应用](gopher)
 * [leetcode-go](leetcode-go)

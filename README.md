@@ -13,18 +13,13 @@ qq交流群：1046260719
 * [剑指offer](剑指offer)
 * [docker-to-k8s](docker-to-k8s)
 * [中间件](middlewares)
+* [微服务框架](微服务框架)
 
 ## 相关推荐
 
 go社区
 
 * [gocn](http://gocn.vip)
-
-go 框架
-
-* gin
-  * [gin中文文档](https://www.kancloud.cn/shuangdeyu/gin_book/949411)
-  * [gin英文文档](https://github.com/gin-gonic/gin/blob/master/README.md)
 
 使用go的公司推荐
 

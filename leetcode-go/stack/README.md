@@ -60,3 +60,57 @@ func (s Stack) pop() (int, Stack, error) {
 }
 ```
 
+## ArrayStack
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+type Stack []int
+
+type ArrayStack struct {
+	stack Stack
+	size int //长度
+}
+
+func main() {
+	s := createStack()
+	fmt.Println(s.isEmpty())
+	fmt.Println(s.stack)
+	s.push(1)
+	fmt.Println(s.isEmpty())
+	fmt.Println(s.stack)
+	v := s.pop()
+	fmt.Println(v)
+	fmt.Println(s.stack)
+	fmt.Println(s.length())
+}
+
+func createStack() *ArrayStack {
+	stack := make([]int, 0)
+	return &ArrayStack{stack: stack, size: 0}
+}
+
+func (s ArrayStack) length() int {
+	return s.size
+}
+
+func (s ArrayStack) isEmpty() bool {
+	return s.size == 0
+}
+
+func (s *ArrayStack) push(value int) {
+	s.stack = append(s.stack, value)
+	s.size++
+}
+
+func (s *ArrayStack) pop() int {
+	v := s.stack[s.size-1]
+	s.stack = s.stack[:s.size-1]
+	s.size--
+	return v
+}
+```

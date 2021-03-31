@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 )
 
@@ -15,7 +16,9 @@ func main() {
 	//是否为空
 	fmt.Println(stack.isEmpty())
 
-	stack.pop()
+	v, stack, _ := stack.pop()
+	fmt.Println(v)
+	fmt.Println(stack)
 }
 
 //栈的长度
@@ -36,8 +39,15 @@ func (s *Stack) push(value int) {
 	*s = append(*s, value)
 }
 
-//pop
-//有问题！
-func (s *Stack) pop() {
-	fmt.Println()
+//返回pop, 新的栈，以及是否正常弹出
+func (s Stack) pop() (int, Stack, error) {
+	if len(s) == 0 {
+		return 0, nil, errors.New("stack is empty, can not pop")
+	}
+	newStack := make(Stack, len(s))
+	copy(newStack, s)
+	fmt.Println(newStack)
+	v := newStack[len(newStack)-1]
+	newStack = newStack[:len(newStack)-1]
+	return v, newStack, nil
 }

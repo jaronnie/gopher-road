@@ -17,7 +17,16 @@ qq交流群：1046260719
 
 ## 相关推荐
 
-go社区
+* [极客兔兔教你从0实现框架](https://github.com/geektutu/7days-golang)
+
+* **golang面试题**
+
+  > * [go-interview](https://github.com/menggggggg/go-interview/)
+  > * [golang面试题总结](https://www.jishuchi.com/read/go-interview/3435)
+  > * [golang大厂面经](https://www.nowcoder.com/discuss/145338?type=2&order=3&pos=15&page=1)
+  > * [golang面试题搜集](https://github.com/lifei6671/interview-go)
+
+**go社区**
 
 * [gocn](http://gocn.vip)
 

@@ -1,8 +1,5 @@
-# 目录
+# go编码规范（uber）
 
-* [改善go代码编程质量的50个有效实践](50-perfect.md)
-
-
-
-## 
-
+> 参考链接
+>
+> https://github1s.com/gocloudcoder/uber_go_guide_cn

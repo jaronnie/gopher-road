@@ -1,110 +1,3 @@
-<!--
-
-Editing this document:
-
-- Discuss all changes in GitHub issues first.
-- Update the table of contents as new sections are added or removed.
-- Use tables for side-by-side code samples. See below.
-
-Code Samples:
-
-Use 2 spaces to indent. Horizontal real estate is important in side-by-side
-samples.
-
-For side-by-side code samples, use the following snippet.
-
-~~~
-<table>
-<thead><tr><th>Bad</th><th>Good</th></tr></thead>
-<tbody>
-<tr><td>
-
-```go
-BAD CODE GOES HERE
-```
-
-</td><td>
-
-```go
-GOOD CODE GOES HERE
-```
-
-</td></tr>
-</tbody></table>
-~~~
-
-(You need the empty lines between the <td> and code samples for it to be
-treated as Markdown.)
-
-If you need to add labels or descriptions below the code samples, add another
-row before the </tbody></table> line.
-
-~~~
-<tr>
-<td>DESCRIBE BAD CODE</td>
-<td>DESCRIBE GOOD CODE</td>
-</tr>
-~~~
-
-
-
--->
-
-<!--
-change.md
-
-# 2019-12-17
-- 函数选项：推荐 “Option” 接口的结构实现
-- 而不是用闭包捕获值。
-
-# 2019-11-26
-- 添加针对全局变量变异的指导。
-
-# 2020-01-11
-- 为`open（..）`调用添加缺少的参数。
-
-# 2020-02-03
-- 使用 `"time"` 处理时间的建议
-- 添加有关在公共结构中嵌入类型的指导。
-
-# 2020-02-25
-- 添加有关接口验证是否符合编译时检查的指导。
-
-# 2020-06-05
-- 添加避免使用内置名称的指导意见
-
-# 2020-06-10
-- 添加 init() 指导意见
-
-# 2020-06-16
-- 追加时优先指定切片容量
-- 添加有关指针接收器可调用性的说明
-
-# 2020-06-17
-- map和切片的联合指导
-
-# 2020-09-15
-- Remove main panic
-
-# 2021-03-17
-- 结构体初始化
-
--->
-
-## [uber-go/guide](https://github.com/uber-go/guide) 的中文翻译
-
-## [English](https://github.com/uber-go/guide/blob/master/style.md)
-
-## Uber Go 语言编码规范
-
- [Uber](https://www.uber.com/) 是一家美国硅谷的科技公司，也是 Go 语言的早期 adopter。其开源了很多 golang 项目，诸如被 Gopher 圈熟知的 [zap](https://github.com/uber-go/zap)、[jaeger](https://github.com/jaegertracing/jaeger) 等。2018 年年末 Uber 将内部的 [Go 风格规范](https://github.com/uber-go/guide) 开源到 GitHub，经过一年的积累和更新，该规范已经初具规模，并受到广大 Gopher 的关注。本文是该规范的中文版本。本版本会根据原版实时更新。
-
- ## 版本
-
-  - 当前更新版本：2021-03-17 版本地址：[commit:#121](https://github.com/uber-go/guide/commit/9180022ccaf35583952003ac505925b1e9a4f8db)
-  - 如果您发现任何更新、问题或改进，请随时 fork 和 PR
-  - Please feel free to fork and PR if you find any updates, issues or improvement.
-
 ## 目录
 
 - [uber-go/guide 的中文翻译](#uber-goguide-的中文翻译)
@@ -217,6 +110,8 @@ change.md
 
 如果希望接口方法修改基础数据，则必须使用指针传递(将对象指针赋值给接口变量)。
 
+> [完整代码示例](code/1.go)
+
 ```go
 type F interface {
   f()
@@ -247,6 +142,8 @@ var f2 F = &S2{}
 补充:上面3条是编译器对接口的检查机制,
 大体意思是错误使用接口会在编译期报错.
 所以可以利用这个机制让部分问题在编译期暴露.
+
+> [完整代码示例](code/2.go)
 
 <table>
 <thead><tr><th>Bad</th><th>Good</th></tr></thead>
@@ -313,7 +210,7 @@ func (h LogHandler) ServeHTTP(
 
 带指针接收器的方法只能通过指针或 [addressable values]调用.
 
-  [addressable values]: https://golang.org/ref/spec#Method_values
+[addressable values]: https://golang.org/ref/spec#Method_values
 
 例如，
 
@@ -489,6 +386,8 @@ slices 和 maps 包含了指向底层数据的指针，因此在需要复制它�
 #### 接收 Slices 和 Maps
 
 请记住，当 map 或 slice 作为函数参数传入时，如果您存储了对它们的引用，则用户可以对其进行修改。
+
+> [完整代码示例](code/5.go)
 
 <table>
 <thead><tr><th>Bad</th> <th>Good</th></tr></thead>
@@ -730,6 +629,8 @@ const (
 #### 使用 `time.Time` 表达瞬时时间
 
 在处理时间的瞬间时使用 [`time.Time`]，在比较、添加或减去时间时使用 `time.Time` 中的方法。
+
+> [完整代码示例](code/time-1.go)
 
 [`time.Time`]: https://golang.org/pkg/time/#Time
 
@@ -1429,8 +1330,8 @@ Go语言规范[language specification] 概述了几个内置的，
 将在当前作用域（或任何嵌套作用域）中隐藏原始标识符，或者混淆代码。
 在最好的情况下，编译器会报错；在最坏的情况下，这样的代码可能会引入潜在的、难以恢复的错误。
 
-  [language specification]: https://golang.org/ref/spec
-  [predeclared identifiers]: https://golang.org/ref/spec#Predeclared_identifiers
+[language specification]: https://golang.org/ref/spec
+[predeclared identifiers]: https://golang.org/ref/spec#Predeclared_identifiers
 
 <table>
 <thead><tr><th>Bad</th><th>Good</th></tr></thead>
@@ -2340,7 +2241,7 @@ type Client struct {
 内嵌应该提供切实的好处，比如以语义上合适的方式添加或增强功能。
 它应该在对用户不利影响的情况下完成这项工作（另请参见：`避免在公共结构中嵌入类型`[Avoid Embedding Types in Public Structs]）。
 
-  [Avoid Embedding Types in Public Structs]: #avoid-embedding-types-in-public-structs
+[Avoid Embedding Types in Public Structs]: #avoid-embedding-types-in-public-structs
 
 嵌入 **不应该**:
 
@@ -2778,7 +2679,7 @@ wantError := `unknown error:"test"`
 
 初始化结构时，几乎应该始终指定字段名。目前由[`go vet`]强制执行。
 
-  [`go vet`]: https://golang.org/cmd/vet/
+[`go vet`]: https://golang.org/cmd/vet/
 
 <table>
 <thead><tr><th>Bad</th><th>Good</th></tr></thead>
@@ -3304,9 +3205,9 @@ use one vs other -->
 
 golangci-lint 有[various-linters]可供使用。建议将上述linters作为基本set，我们鼓励团队添加对他们的项目有意义的任何附加linters。
 
-  [golangci-lint]: https://github.com/golangci/golangci-lint
-  [.golangci.yml]: https://github.com/uber-go/guide/blob/master/.golangci.yml
-  [various-linters]: https://golangci-lint.run/usage/linters/
+[golangci-lint]: https://github.com/golangci/golangci-lint
+[.golangci.yml]: https://github.com/uber-go/guide/blob/master/.golangci.yml
+[various-linters]: https://golangci-lint.run/usage/linters/
 
 
 ## Stargazers over time

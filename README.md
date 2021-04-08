@@ -24,15 +24,20 @@ qq交流群：1046260719
 
   > * [Go 语言设计与实现](https://draveness.me/golang)
 
-* **golang面试题**
+* **golang面试**
 
+  > * [golang数据结构与算法模板](https://greyireland.gitbook.io/algorithm-pattern/)
+  > * [golang刷leetcode](https://books.halfrost.com/leetcode/)
   > * [go-interview](https://github.com/menggggggg/go-interview/)
   > * [golang面试题总结](https://www.jishuchi.com/read/go-interview/3435)
   > * [golang大厂面经](https://www.nowcoder.com/discuss/145338?type=2&order=3&pos=15&page=1)
   > * [golang面试题搜集](https://github.com/lifei6671/interview-go)
 
 * **go社区**
+  
   * [gocn](http://gocn.vip)
+  
 * **使用go的公司推荐**
+  
   * [点击这里查看](company.md)
 

@@ -9,6 +9,7 @@ qq交流群：1046260719
 ## 目录结构
 
 * [从基础到开发应用](gopher)
+* [常用库的使用](常用库的使用)
 * [go编码规范](go编码规范)
 * [leetcode-go](leetcode-go)
 * [剑指offer](剑指offer)
@@ -23,6 +24,7 @@ qq交流群：1046260719
 * **优秀博客以及书籍**
 
   > * [Go 语言设计与实现](https://draveness.me/golang)
+  > * [地鼠文档](http://wen.topgoer.com/)
 
 * **golang面试**
 

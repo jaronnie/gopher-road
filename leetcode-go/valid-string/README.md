@@ -62,7 +62,7 @@ func isValid(s string) bool {
 }
 ```
 ```go
-把切片当栈用也是牛逼哈
+//把切片当栈用也是牛逼哈
 var stack []string
 //push
 stack = append(stack, value)

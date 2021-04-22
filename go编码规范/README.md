@@ -781,6 +781,8 @@ Go 中有多种声明错误（Error) 的选项：
 
 如果客户端需要检测错误，并且您已使用创建了一个简单的错误 [`errors.New`]，请使用一个错误变量。
 
+> [完整代码示例](code/error-1.go)
+
 <table>
 <thead><tr><th>Bad</th><th>Good</th></tr></thead>
 <tbody>
@@ -832,6 +834,8 @@ if err := foo.Open(); err != nil {
 </tbody></table>
 
 如果您有可能需要客户端检测的错误，并且想向其中添加更多信息（例如，它不是静态字符串），则应使用自定义类型。
+
+> [完整代码示例](code/error-2.go)
 
 <table>
 <thead><tr><th>Bad</th><th>Good</th></tr></thead>

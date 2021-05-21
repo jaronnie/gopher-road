@@ -1,10 +1,12 @@
 # gopher-road
 
-记录golang后端开发之路以及面试题等。
+记录golang后端开发之路。
 
-欢迎star
+欢迎star！
 
-qq交流群：1046260719
+* qq交流群：1046260719
+* 微信公众号：gocloudcoder
+* 个人博客：https://blog.gocloudcoder.com
 
 ## 目录结构
 
@@ -13,9 +15,12 @@ qq交流群：1046260719
 * [go编码规范](go编码规范)
 * [leetcode-go](leetcode-go)
 * [剑指offer](剑指offer)
+* [应用数据结构与算法](应用数据结构与算法)
+* [学习计算机组成原理](学习计算机组成原理)
 * [docker-to-k8s](docker-to-k8s)
 * [中间件](middlewares)
 * [微服务框架](微服务框架)
+* [动手设计Go框架](设计Go框架)
 
 ## 相关推荐
 
@@ -25,6 +30,8 @@ qq交流群：1046260719
 
   > * [Go 语言设计与实现](https://draveness.me/golang)
   > * [地鼠文档](http://wen.topgoer.com/)
+  > * [Go 语言编程之旅：一起用 Go 做项目](https://golang2.eddycjy.com/)
+  > * [Go 语言高性能编程](https://geektutu.com/post/high-performance-go.html)
 
 * **golang面试**
 

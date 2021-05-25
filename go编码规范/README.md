@@ -1,11 +1,7 @@
 ## 目录
 
-- [uber-go/guide 的中文翻译](#uber-goguide-的中文翻译)
-- [English](#english)
+- [Tencent Go代码安全指南](https://github.com/Tencent/secguide/blob/main/Go%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97.md)
 - [Uber Go 语言编码规范](#uber-go-语言编码规范)
-- [版本](#版本)
-- [目录](#目录)
-- [介绍](#介绍)
 - [指导原则](#指导原则)
   - [指向 interface 的指针](#指向-interface-的指针)
   - [Interface 合理性验证](#interface-合理性验证)
@@ -2510,11 +2506,11 @@ func f(list []int) {
   ```go
   nums := []int{}
   // or, nums := make([]int)
-
+  
   if add1 {
     nums = append(nums, 1)
   }
-
+  
   if add2 {
     nums = append(nums, 2)
   }
@@ -2524,11 +2520,11 @@ func f(list []int) {
 
   ```go
   var nums []int
-
+  
   if add1 {
     nums = append(nums, 1)
   }
-
+  
   if add2 {
     nums = append(nums, 2)
   }

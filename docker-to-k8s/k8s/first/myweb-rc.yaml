@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myweb
+spec:
+# Pod的数量
+  replicas: 1
+# spec.selector与spec.template.metadata.labels，这两个字段必须相同，否则下一步创建RC会失败。
+  selector:
+    app: myweb
+  template:
+    metadata:
+      labels:
+        app: myweb
+#   容器组的定义
+    spec:
+      containers:
+#       容器名称
+        - name: myweb
+#         容器对应的镜像
+          image: kubeguide/tomcat-app:v1
+          ports:
+#         在8080端口上启动容器进程，PodIP与容器端口组成Endpoint，代表着一个服务进程对外通信的地址
+          - containerPort: 8080

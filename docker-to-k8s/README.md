@@ -23,5 +23,5 @@
 
 实践：
 
-* 采用k8s部署第一个java web项目
+* [采用k8s部署第一个java web项目](k8s/first)
 

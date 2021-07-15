@@ -6,6 +6,6 @@
 
 ## 实践项目
 
-[music-player](github.com/jaronnie/music-player) 采用docker-compose一键部署
+[music-player](https://github.com/jaronnie/music-player) 采用docker-compose一键部署
 
 

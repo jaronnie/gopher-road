@@ -18,7 +18,7 @@
 * [docker-to-k8s](docker-to-k8s)
 * [中间件](middlewares)
 * [微服务框架](MicroService)
-* [动手设计Go框架](设计Go框架)
+* [动手做Go项目](动手做Go项目)
 * [面试](interview)
 
 ## 相关推荐

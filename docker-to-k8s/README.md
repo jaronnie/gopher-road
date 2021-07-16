@@ -19,7 +19,11 @@
 
 ## k8s
 
-#### [学习路线](k8s)
+好文推荐：
+
+* [快速了解 Docker 和 Kubernetes](https://mp.weixin.qq.com/s/ji0Pj00xeHOeispNhsPKZw)
+
+#### [学习路线](k8s/README.md)
 
 #### 实践：
 

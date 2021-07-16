@@ -10,13 +10,11 @@
 
 ## 目录结构
 
-* [从基础到开发应用](gopher)
-* [常用库的使用](常用库的使用)
-* [go编码规范](go编码规范)
+* [golang基础](gopher)
 * [leetcode-go](leetcode-go)
 * [剑指offer](剑指offer)
-* [应用数据结构与算法](应用数据结构与算法)
-* [学习计算机组成原理](学习计算机组成原理)
+* [每日一库](a-daily-library)
+* [go编码规范](go编码规范)
 * [docker-to-k8s](docker-to-k8s)
 * [中间件](middlewares)
 * [微服务框架](MicroService)

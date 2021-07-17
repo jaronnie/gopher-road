@@ -12,6 +12,8 @@
 
   * [k8s 网络通讯模型](docs/k8s网络通讯模型.md)
 * 部署 k8s 集群
+  * [初探k8s - 跨时代的jay (gocloudcoder.com)](https://blog.gocloudcoder.com/?p=1326)
+  * [虚拟机方式](https://blog.csdn.net/qq_39578545/article/details/108861006)
 * 资源清单
   * k8s 中资源的概念
   * 掌握资源清单 yaml 语法

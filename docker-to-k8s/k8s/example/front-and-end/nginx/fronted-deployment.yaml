@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: "anjia0532/google-samples.hello-frontend:1.0"
+          image: "gocloudcoder/kube-nginx:v1"
           lifecycle:
             preStop:
               exec:

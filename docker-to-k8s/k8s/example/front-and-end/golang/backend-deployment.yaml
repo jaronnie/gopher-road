@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: "gocloudcoder/kube-go-app:v1"
+          image: "gocloudcoder/kube-go-app:8333"
           ports:
             - name: http
-              containerPort: 80
+              containerPort: 8083

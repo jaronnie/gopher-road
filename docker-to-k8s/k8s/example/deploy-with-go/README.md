@@ -316,4 +316,19 @@ go 后端服务正常：
 
 ![image-20210720104741924](http://picture.nj-jay.com/image-20210720104741924.png)
 
-  
+至此我们部署的方式从本地，docker，docker-compose，到终极解决方案 k8s，已经全部完成。
+
+相关代码也已经托管到 github 上：
+
+https://github.com/jaronnie/gopher-road/tree/main/docker-to-k8s/k8s/example/deploy-with-go
+
+当然上述仍然不是一个完整的项目流程，没有加入数据库服务，但是包含了大致的流程。
+
+如果你想完整体验一个项目使用 docker-compose 和 k8s 部署的话：
+
+访问：https://github.com/jaronnie/music-player
+
+## 参考链接
+
+* https://github.com/docker/awesome-compose/tree/master/nginx-golang-mysql
+* https://kubernetes.io/zh/docs/tasks/access-application-cluster/connecting-frontend-backend/

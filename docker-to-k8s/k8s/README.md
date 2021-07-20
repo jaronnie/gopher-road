@@ -15,10 +15,11 @@
   * [初探k8s - 跨时代的jay (gocloudcoder.com)](https://blog.gocloudcoder.com/?p=1326)
   * [虚拟机方式](https://blog.csdn.net/qq_39578545/article/details/108861006)
 * 资源清单
-  * k8s 中资源的概念
-  * 掌握资源清单 yaml 语法
-  * 编写 pod
-  * pod 的声明周期
+  * [k8s 中的资源对象](docs/k8s中的资源对象.md)
+  * [掌握资源清单 yaml 语法](docs/资源清单yaml语法.md)
+  * Pod常用字段的解释
+  * 从零开始写Pod模板
+  * Pod 的生命周期
 * pod 控制器
   * 各种控制器类型的特点以及说明
 * 服务发现

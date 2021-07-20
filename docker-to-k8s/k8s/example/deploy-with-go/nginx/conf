@@ -1,0 +1,19 @@
+upstream Backend {
+    # hello is the internal DNS name used by the backend Service inside Kubernetes
+    server kube-go-app:8888;
+}
+
+server {
+    listen 8888;
+    location / {
+        # The following statement will proxy traffic to the upstream named Backend
+        proxy_pass http://Backend;
+    }
+}
+
+server {
+     listen 8080;
+     location / {
+            root /usr/share/nginx/html;
+     }
+}

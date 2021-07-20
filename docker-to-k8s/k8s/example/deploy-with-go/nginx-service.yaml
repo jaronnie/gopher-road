@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  selector:
+    app: kube-go-app
+    tier: frontend
+  ports:
+  - protocol: "TCP"
+    name: "kube-go-app"
+    port: 8888
+    targetPort: 8888
+  - protocol: "TCP"
+    name: "frontend"
+    port: 8080
+    targetPort: 8080
+  type: LoadBalancer

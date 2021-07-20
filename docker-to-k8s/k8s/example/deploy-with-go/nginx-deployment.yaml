@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: kube-go-app
+      tier: frontend
+      track: stable
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kube-go-app
+        tier: frontend
+        track: stable
+    spec:
+      containers:
+        - name: kube-nginx
+          image: "gocloudcoder/kube-nginx:v1"
+          lifecycle:
+            preStop:
+              exec:
+                command: ["/usr/sbin/nginx","-s","quit"]

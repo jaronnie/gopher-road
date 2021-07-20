@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  selector:
+    matchLabels:
+      app: kube-go-app
+      tier: backend
+      track: stable
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: kube-go-app
+        tier: backend
+        track: stable
+    spec:
+      containers:
+        - name: kube-go-app
+          image: "gocloudcoder/kube-go-app:v1"
+          ports:
+            - name: http
+              containerPort: 8888

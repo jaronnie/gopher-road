@@ -61,3 +61,39 @@ d, _ := time.ParseDuration("-24h")
 nowBefore1day := now.Add(1 * d)
 ```
 
+## 定时器 time.Ticker
+
+### 每隔一秒钟执行一次
+
+```go
+func EverySecondPrint() {
+	ticker := time.NewTicker(time.Second) // 每隔1s进行一次打印
+	for {
+		<-ticker.C
+		fmt.Println("这是ticker的打印")
+	}
+}
+```
+
+### 指定执行时间
+
+```go
+func JustOneSecond(ctx context.Context) {
+	ticker := time.NewTicker(time.Second)
+	for {
+		select {
+		case <- ticker.C:
+			fmt.Println("ticker")
+		case <- ctx.Done():
+			return
+		}
+	}
+}
+
+func main() {
+  ctx, cancel := context.WithTimeout(context.Background(), 2 * time.Second)
+	defer cancel()
+	JustOneSecond(ctx)
+}
+```
+

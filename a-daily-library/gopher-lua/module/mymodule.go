@@ -1,10 +1,10 @@
 package log
 
 import (
-    "github.com/yuin/gopher-lua"
-    golog "git.hyperchain.cn/blocface/golog"
-    JSON "github.com/layeh/gopher-json"
-    "strings"
+	golog "git.hyperchain.cn/blocface/golog"
+	JSON "github.com/layeh/gopher-json"
+	"github.com/yuin/gopher-lua"
+	"strings"
 )
 
 func Loader(L *lua.LState) int {

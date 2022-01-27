@@ -1,0 +1,5 @@
+package constant
+
+var Version = ""
+
+

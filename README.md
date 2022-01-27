@@ -6,7 +6,7 @@
 
 * qq交流群：1046260719
 * 微信公众号：gocloudcoder
-* 个人博客：https://blog.gocloudcoder.com
+* 个人博客：https://blog.jaronnie.com
 
 ## 目录结构
 

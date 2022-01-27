@@ -1,8 +1,8 @@
 package main
 
 import (
-    "mymain/module"
     "github.com/yuin/gopher-lua"
+    "mymain/module"
 )
 
 func main() {

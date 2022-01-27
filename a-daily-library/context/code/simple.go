@@ -20,12 +20,5 @@ func reqTask(ctx context.Context, name string) {
 }
 
 func main() {
-	ctx, cancel := context.WithDeadline(context.Background(), time.Now().Add(1*time.Second))
-	go reqTask(ctx, "worker1")
-	go reqTask(ctx, "worker2")
 
-	time.Sleep(3 * time.Second)
-	fmt.Println("before cancel")
-	cancel()
-	time.Sleep(3 * time.Second)
 }

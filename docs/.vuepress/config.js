@@ -93,7 +93,7 @@ module.exports = {
           'julenkv'
          ],
          '/recommendation/': [
-          ''
+          'go-code-guide',
          ]
        }
       },

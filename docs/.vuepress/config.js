@@ -113,6 +113,8 @@ module.exports = {
          ],
          '/recommendation/': [
           'go-code-guide',
+          'go-books-read',
+          'go-leetcode',
          ]
        }
       },

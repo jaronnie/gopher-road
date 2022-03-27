@@ -10,21 +10,19 @@ features:
   details: 基本语法,标准库,第三方库,web框架...  
 - title: Linux
   details: 常用命令,shell script...
-- title: Algorithms
-  details: Data Structures and Algorithms
-- title: CodeManage
-  details: 代码管理工具 Git
-- title: Middleware
-  details: mysql,nats,minio,etcd...
+- title: 算法与数据结构
+  details: Data Structures and Algorithms...
+- title: 代码管理
+  details: Git,Github,Jenkins,Github Actions...
+- title: 中间件
+  details: mysql,mongodb,rabbitmq,nats,minio,etcd...
 - title: Docker
-  details: docker,docker-compose 
-           命令行使用
-           sdk 使用
+  details: docker,docker-compose 使用,sdk 使用...
 - title: Kuberbetes 
-  details: kubernetes 部署,使用,sdk
-- title: Project
-  details: Golang 实战  
-- title: Recommendation
-  details: 推荐阅读
+  details: k3s,k8s 集群搭建,kubectl 使用,sdk 使用...
+- title: 项目实战
+  details: Golang 实战项目...
+- title: 推荐阅读
+  details: 书籍,leetcode,代码规范...
 footer: MIT Licensed | Copyright © 2022 jaronnie
 ---

@@ -1,16 +1,19 @@
 # gopher-road
 
-记录golang后端开发之路。
-
-欢迎star！
-
-* qq交流群：1046260719
-* 微信公众号：gocloudcoder
-* 个人博客：https://blog.jaronnie.com
-
 ## 目录结构
 
-* [golang基础](gopher)
-* [每日一库](a-daily-library)
+* [Golang](docs/golang/)
+* [Linux](docs/linux/)
+* [算法与数据结构](docs/algorithms/)
+* [代码管理](docs/codeManage/)
+* [中间件](docs/middleware/)
+* [docker](docs/docker/)
+* [kubernetes](docs/kubernetes/)
+* [项目实战](docs/project/)
+* [推荐阅读](docs/recommendation/)
+
+## 在线阅读
+
+[gopher-road](https://gopher-road.jaronnie.com)
 
 

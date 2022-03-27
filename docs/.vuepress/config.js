@@ -36,13 +36,13 @@ module.exports = {
        nav: [
          { text: 'golang', link: '/golang/', ariaLabel: '指南' },
          { text: 'linux', link: '/linux/', ariaLabel: '指南' },
-         { text: 'algorithms', link: '/algorithms/', ariaLabel: '指南' },
-         { text: 'codeManage', link: '/codeManage/', ariaLabel: '指南' },
-         { text: 'middleware', link: '/middleware/', ariaLabel: '指南' },
+         { text: '算法与数据结构', link: '/algorithms/', ariaLabel: '指南' },
+         { text: '代码管理', link: '/codeManage/', ariaLabel: '指南' },
+         { text: '中间件', link: '/middleware/', ariaLabel: '指南' },
          { text: 'docker', link: '/docker/', ariaLabel: '指南' },
          { text: 'kubernetes', link: '/kubernetes/', ariaLabel: '指南' },
-         { text: 'project', link: '/project/', ariaLabel: '指南' },
-         { text: 'recommendation', link: '/recommendation/', ariaLabel: '指南' },
+         { text: '项目实战', link: '/project/', ariaLabel: '指南' },
+         { text: '推荐阅读', link: '/recommendation/', ariaLabel: '指南' },
          { text: 'Github', link: 'https://github.com/jaronnie/gopher-road' }
        ],
        sidebar: {
@@ -50,7 +50,43 @@ module.exports = {
            '',
          ],
          '/golang/': [
-           'sync',
+          {
+            title: '标准库',
+            collapsable: true,
+            children: [
+              { title: 'Go time 时间处理', path: '/golang/standard-library/time' },
+            ]
+          },
+          {
+            title: '第三方库standard-library',
+            collapsable: true,
+            children: [
+              { title: 'Go 类型转换神器 cast', path: '/golang/third-party-library/cast' },
+              { title: 'Go 操作 excel 利器 excelize', path: '/golang/third-party-library/excelize' },
+              { title: 'Go 常用正则表达式 commonregex', path: '/golang/third-party-library/commonregex' },
+              { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/third-party-library/tail' },
+            ]
+          },
+          {
+            title: 'web 框架',
+            collapsable: true,
+            children: [
+              {
+                title: 'Golang 原生 http 框架',
+                collapsable: true,
+                children: [
+                  { title: '入门使用', path: '/golang/web-frame/net-http/start' },
+                ]
+              },
+              {
+                title: 'Golang 轻量级 http 框架 Gin',
+                collapsable: true,
+                children: [
+                  { title: '入门使用', path: '/golang/web-frame/gin/start' },
+                ]
+              },
+            ]
+          },
          ],
          '/linux/': [
            '',

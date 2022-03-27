@@ -1,4 +1,4 @@
-# Gopher-Road
+# Golang 后端工程师之路
 
 ## Golang
 
@@ -11,16 +11,16 @@
 * 掌握常用 Linux 命令
 * 掌握 shell 脚本编写
 
-## Algorithms
+## 算法与数据结构
 
 * 常用数据结构与算法
 
-## CodeManage
+## 代码管理
 
 * Git
 * Go mod
 
-## Middleware
+## 中间件
 
 * mysql
 * nats
@@ -39,10 +39,10 @@
 * kubectl 使用
 * sdk 使用
 
-## Project
+## 项目实战
 
 * 实战项目
 
-## Recommendation
+## 推荐阅读
 
 * 推荐阅读

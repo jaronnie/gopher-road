@@ -1,2 +1,0 @@
-I love go
-I also love linux

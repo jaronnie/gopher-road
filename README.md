@@ -11,14 +11,7 @@
 ## 目录结构
 
 * [golang基础](gopher)
-* [leetcode-go](leetcode-go)
-* [剑指offer](剑指offer)
 * [每日一库](a-daily-library)
-* [go编码规范](go编码规范)
-* [docker-to-k8s](docker-to-k8s)
-* [中间件](middlewares)
-* [微服务框架](MicroService)
-* [面试](interview)
 
 ## 相关推荐
 
@@ -43,8 +36,5 @@
 * **go社区**
   
   * [gocn](http://gocn.vip)
-  
-* **使用go的公司推荐**
-  
-  * [点击这里查看](company.md)
+
 

@@ -66,8 +66,21 @@ module.exports = {
             title: 'mysql',
             collapsable: true,
             children: [
-              { title: 'test1', path: '/middleware/mysql/test1' },
-              { title: 'test2', path: '/middleware/mysql/test2' },
+              { title: 'test1', path: '/middleware/mysql/' },
+            ]
+          },
+          {
+            title: 'mongodb',
+            collapsable: true,
+            children: [
+              { title: 'mongodb 入门使用', path: '/middleware/mongodb/' },
+            ]
+          },
+          {
+            title: 'rabbitmq',
+            collapsable: true,
+            children: [
+              { title: 'rabbitmq 入门使用', path: '/middleware/rabbitmq/' },
             ]
           },
           {

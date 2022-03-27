@@ -33,7 +33,7 @@ docker exec -i -t mymongo mongo
 show dbs
 ```
 
-![image-20210312224911034](http://picture.nj-jay.com/image-20210312224911034.png)
+![image-20210312224911034](http://resource.gocloudcoder.com/image-20210312224911034.png)
 
 * 切换到制定数据库hello，如果没有则创建
 
@@ -41,7 +41,7 @@ show dbs
 use hello
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312224950504.png" alt="image-20210312224950504" style="zoom:200%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312224950504.png" alt="image-20210312224950504" style="zoom:200%;" />
 
 * 显示当前所在数据库
 
@@ -49,7 +49,7 @@ use hello
 db
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312225038087.png" alt="image-20210312225038087" style="zoom:200%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312225038087.png" alt="image-20210312225038087" style="zoom:200%;" />
 
 * 删除当前数据库
 
@@ -57,7 +57,7 @@ db
 db.dropDatabase()
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312225255723.png" alt="image-20210312225255723" style="zoom:200%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312225255723.png" alt="image-20210312225255723" style="zoom:200%;" />
 
 ### 集合常用命令
 
@@ -73,7 +73,7 @@ show collections
 db.createCollection("student")
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312225547424.png" alt="image-20210312225547424" style="zoom: 150%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312225547424.png" alt="image-20210312225547424" style="zoom: 150%;" />
 
 * 删除指定集合
 
@@ -81,7 +81,7 @@ db.createCollection("student")
 db.student.drop()
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312225859358.png" alt="image-20210312225859358" style="zoom:200%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312225859358.png" alt="image-20210312225859358" style="zoom:200%;" />
 
 ### 文档常用命令
 
@@ -106,7 +106,7 @@ db.student.insertMany([
 db.student.find()
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312232142468.png" alt="image-20210312232142468" style="zoom:150%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312232142468.png" alt="image-20210312232142468" style="zoom:150%;" />
 
 * 更新文档
 
@@ -114,7 +114,7 @@ db.student.find()
 db.student.update({"name":"dww"},{"name":"dww", "age":18})
 ```
 
-![image-20210312232731764](http://picture.nj-jay.com/image-20210312232731764.png)
+![image-20210312232731764](http://resource.gocloudcoder.com/image-20210312232731764.png)
 
 * 删除一条文档
 
@@ -122,7 +122,7 @@ db.student.update({"name":"dww"},{"name":"dww", "age":18})
 db.student.deleteOne({"name":"dww"})
 ```
 
-![image-20210312232955870](http://picture.nj-jay.com/image-20210312232955870.png)
+![image-20210312232955870](http://resource.gocloudcoder.com/image-20210312232955870.png)
 
 * 查询文档
 

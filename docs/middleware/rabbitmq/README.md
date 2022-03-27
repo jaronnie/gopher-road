@@ -1,8 +1,4 @@
-# 消息队列之rabbit mq
-
-> 本文来自我的中间件教程
->
-> 
+# 消息队列之 rabbit mq
 
 在此之前我们必须理解几个概念。
 
@@ -39,12 +35,6 @@
 
 当某个模块需要修改功能时，需要将所有的模块组件重新编译，打包，上线。
 
-> 图片来自csdn
->
-> 链接：https://blog.csdn.net/supingemail/article/details/80076009
-
-![img](https://img-blog.csdn.net/20180425105600940?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1cGluZ2VtYWls/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-
 当服务越来越大，模块间的依赖将会越来越强，耦合性将会越来越大。逐渐的随着业务增长，将会成为一座巨大的“shit”。
 
 这时候，微服务就起到重要的作用了。
@@ -53,11 +43,6 @@
 
 微服务架构是目前广为关注的一种分布式架构。
 
-> 图片来自csdn
->
-> 链接：https://blog.csdn.net/supingemail/article/details/80076009
-
-![img](https://img-blog.csdn.net/20180425105225274?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N1cGluZ2VtYWls/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 将不同的业务拆分成不同的服务，使用不同的数据表，各个服务间不相互依赖。并独立运行在不同的服务端口。
 
@@ -153,7 +138,7 @@ docker run -d --restart=always --name myrabbitmq -p 5672:5672  rabbitmq
 # rabbitmq 使用官方镜像rabbitmq
 ```
 
-![image-20210310193558444](http://picture.nj-jay.com/image-20210310193558444.png)
+![image-20210310193558444](http://resource.gocloudcoder.com/image-20210310193558444.png)
 
 接下来我们安装golang rabbitmq客户端 amqp
 
@@ -220,7 +205,7 @@ func failOnError(err error, msg string) {
 
 使用docker logs -f myrabbitmq就可以查看
 
-![image-20210310195251559](http://picture.nj-jay.com/image-20210310195251559.png)
+![image-20210310195251559](http://resource.gocloudcoder.com/image-20210310195251559.png)
 
 每运行一次，将建立连接，然后运行完毕连接断开。
 
@@ -285,7 +270,7 @@ func failOnError(err error, msg string) {
 
 或者我们先运行发送消息，再运行接收消息，依然可以正常接收到消息。邮箱的机制保证了消息传递的可靠性。
 
-![image-20210310202348798](http://picture.nj-jay.com/image-20210310202348798.png)
+![image-20210310202348798](http://resource.gocloudcoder.com/image-20210310202348798.png)
 
 ### rabbit mq重大意义
 

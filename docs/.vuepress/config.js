@@ -81,16 +81,18 @@ module.exports = {
             children: ['minio/']
           }
         ],
-         '/docker': [
+         '/docker/': [
           ''
          ],
-         '/kubernetes': [
+         '/kubernetes/': [
           ''
          ],
-         '/project': [
-          ''
+         '/project/': [
+          'qiniu-cli',
+          'music-player',
+          'julenkv'
          ],
-         '/recommendation': [
+         '/recommendation/': [
           ''
          ]
        }

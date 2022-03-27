@@ -1,0 +1,35 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Source file
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+
+      - name: Build Vuepress
+        run: |
+          npm i
+          npm run docs:build
+          cp -r docs/.vuepress/dist .
+
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DOMAIN }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}  
+          source: "dist/*"
+          target: ${{ secrets.SITEPATH }}
+          strip_components: 1

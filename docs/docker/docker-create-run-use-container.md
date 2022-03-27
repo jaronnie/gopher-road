@@ -2,7 +2,7 @@
 
 教程所使用的环境
 
-![image-20210307200220343](http://picture.nj-jay.com/image-20210307200220343.png)
+![image-20210307200220343](http://resource.gocloudcoder.com/image-20210307200220343.png)
 
 ## 查看docker是否安装
 
@@ -94,7 +94,7 @@ systemctl restart docker
 
 我们可以使用docker run命令创建容器。它的功能是提供了Docker容器的创建到启动。
 
-![image-20210307235009406](http://picture.nj-jay.com/image-20210307235009406.png)
+![image-20210307235009406](http://resource.gocloudcoder.com/image-20210307235009406.png)
 
 ```shell
 docker run -i -t ubuntu /bin/bash
@@ -116,7 +116,7 @@ docker run -i -t ubuntu /bin/bash
 
 我们再精简一下这个命令。不启动交互式的终端，并执行ls命令。
 
-![image-20210308070132830](http://picture.nj-jay.com/image-20210308070132830.png)
+![image-20210308070132830](http://resource.gocloudcoder.com/image-20210308070132830.png)
 
 那这个容器运行以及就终止了。
 
@@ -186,7 +186,7 @@ docker rm c3fbd9db71fd
 docker rmi ubuntu:latest
 ```
 
-![image-20210309151146187](http://picture.nj-jay.com/image-20210309151146187.png)
+![image-20210309151146187](http://resource.gocloudcoder.com/image-20210309151146187.png)
 
 由于ubuntu2容器还在依赖这个镜像，所以无法删除。
 
@@ -197,7 +197,7 @@ docker rm ubuntu2
 docker rmi ubuntu:latest
 ```
 
-![image-20210309151308966](http://picture.nj-jay.com/image-20210309151308966.png)
+![image-20210309151308966](http://resource.gocloudcoder.com/image-20210309151308966.png)
 
 ## 创建守护式容器
 
@@ -207,7 +207,7 @@ docker rmi ubuntu:latest
 docker run -i -t -d --name ubuntu666 ubuntu echo "hello world"
 ```
 
-![image-20210309152121185](http://picture.nj-jay.com/image-20210309152121185.png)
+![image-20210309152121185](http://resource.gocloudcoder.com/image-20210309152121185.png)
 
 使用-d选项，可以创建守护式容器，只返回容器ID。
 
@@ -236,7 +236,7 @@ CONTAINER ID   IMAGE         COMMAND                  CREATED         STATUS    
 ab99a424b7d8   ubuntu        "/bin/bash"              5 seconds ago   Up 4 seconds                      ubuntu123
 ```
 
-![image-20210309202831399](http://picture.nj-jay.com/image-20210309202831399.png)
+![image-20210309202831399](http://resource.gocloudcoder.com/image-20210309202831399.png)
 
 我们使用exec命令让容器新开一个进程执行一个任务。
 
@@ -244,7 +244,7 @@ ab99a424b7d8   ubuntu        "/bin/bash"              5 seconds ago   Up 4 secon
 docker exec ubuntu123 echo hello
 ```
 
-![image-20210309202956904](http://picture.nj-jay.com/image-20210309202956904.png)
+![image-20210309202956904](http://resource.gocloudcoder.com/image-20210309202956904.png)
 
 使用exec命令让容器后台执行一个任务。在/root下创建hello.txt文件。
 
@@ -267,7 +267,7 @@ docker start ubuntu123
 docker exec -i -t ubuntu123 /bin/bash
 ```
 
-![image-20210309210157402](http://picture.nj-jay.com/image-20210309210157402.png)
+![image-20210309210157402](http://resource.gocloudcoder.com/image-20210309210157402.png)
 
 ## 停止正在运行的容器
 

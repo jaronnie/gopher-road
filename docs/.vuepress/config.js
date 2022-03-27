@@ -82,7 +82,13 @@ module.exports = {
           }
         ],
          '/docker/': [
-          ''
+          'what-is-docker',
+          'docker-install',
+          'docker-create-run-use-container',
+          'docker-build-image',
+          'docker-dockerfile',
+          'docker-practice-ubuntu-ssh',
+          'docker-practice-mysql'
          ],
          '/kubernetes/': [
           ''

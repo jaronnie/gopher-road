@@ -1,4 +1,4 @@
-docker实战二：运行mysql容器
+# docker实战二：运行mysql容器
 
 适用场景：
 
@@ -21,13 +21,13 @@ docker实战二：运行mysql容器
 >
 > 类似corcleci/mysql都是其他用户个人定制的镜像。谨慎使用
 
-![image-20210312134046996](http://picture.nj-jay.com/image-20210312134046996.png)
+![image-20210312134046996](http://resource.gocloudcoder.com/image-20210312134046996.png)
 
 查看具体的版本需要在[官网](hub.docker.com)上进行查看。
 
 由于网站在国外，电脑访问非常慢，所以我用手机翻墙演示一下。
 
-<img src="http://picture.nj-jay.com/image-20210312135250312.png" alt="image-20210312135250312" style="zoom: 67%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312135250312.png" alt="image-20210312135250312" style="zoom: 67%;" />
 
 ```shell
 docker pull mysql:5.7
@@ -90,5 +90,5 @@ func main() {
 }
 ```
 
-<img src="http://picture.nj-jay.com/image-20210312162544468.png" alt="image-20210312162544468" style="zoom:150%;" />
+<img src="http://resource.gocloudcoder.com/image-20210312162544468.png" alt="image-20210312162544468" style="zoom:150%;" />
 

@@ -1,4 +1,10 @@
 module.exports = {
+  head: [
+    [
+        'link', // 设置 favicon.ico
+        { rel: 'icon', href: 'favicon-gopher-road.ico' }
+    ]
+],
   base: '/',
   locales: {
     // 键名是该语言所属的子路径
@@ -13,7 +19,7 @@ module.exports = {
     '@vuepress/back-to-top',
   ],
   themeConfig: {
-    logo: 'https://resource.gocloudcoder.com/logo.jpeg',
+    logo: 'logo.jpeg',
     locales: {  
       '/': {
        // 多语言下拉菜单的标题

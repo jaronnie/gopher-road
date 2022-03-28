@@ -3,8 +3,8 @@ home: true
 heroText: gopher-road
 heroImage: https://resource.gocloudcoder.com/logo.jpeg
 tagline: The Road to Go!
-actionText: 简介 →
-actionLink: /introduction/
+actionText: 开始 →
+actionLink: /golang/
 features:
 - title: Golang
   details: 基本语法,标准库,第三方库,web框架...  

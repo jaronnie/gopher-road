@@ -1,3 +1,5 @@
 # Kubernetes
 
-kubernetes
+![](https://resource.gocloudcoder.com/gopher-road-kubernetes)
+
+* [k8s 拉取镜像策略之 always 是如何实现的](./k8s-image-pull-policy.md)

@@ -19,7 +19,7 @@ module.exports = {
     '@vuepress/back-to-top',
   ],
   themeConfig: {
-    logo: 'logo.jpeg',
+    logo: 'https://resource.gocloudcoder.com/logo.jpeg',
     locales: {  
       '/': {
        // 多语言下拉菜单的标题
@@ -52,9 +52,6 @@ module.exports = {
          { text: 'Github', link: 'https://github.com/jaronnie/gopher-road' }
        ],
        sidebar: {
-         '/introduction/': [
-           '',
-         ],
          '/golang/': [
           {
             title: '标准库',
@@ -95,46 +92,36 @@ module.exports = {
           },
          ],
          '/linux/': [
-           '',
+           'why-need-linux',
+           'du',
+           'silversearcher-ag',
+           'grep-sed-awk',
+           'compress-decompress',
+           'copy-compare-cut'
          ],
          '/algorithms/': [
-           '',
+           'kahan-summation',
          ],
          '/codeManage/': [
-           '',
+           'gomodule',
+           'git-workflow',
+           'jenkins-go'
          ],
          '/middleware/': [
-          {
-            title: 'mysql',
-            collapsable: true,
-            children: [
-              { title: 'test1', path: '/middleware/mysql/' },
-            ]
-          },
           {
             title: 'mongodb',
             collapsable: true,
             children: [
-              { title: 'mongodb 入门使用', path: '/middleware/mongodb/' },
+              { title: 'mongodb 入门使用', path: '/middleware/mongodb/start' },
             ]
           },
           {
             title: 'rabbitmq',
             collapsable: true,
             children: [
-              { title: 'rabbitmq 入门使用', path: '/middleware/rabbitmq/' },
+              { title: 'rabbitmq 入门使用', path: '/middleware/rabbitmq/start' },
             ]
           },
-          {
-            title: 'nats',
-            collapsable: true,
-            children: ['nats/']
-          },
-          {
-            title: 'minio',
-            collapsable: true,
-            children: ['minio/']
-          }
         ],
          '/docker/': [
           'what-is-docker',
@@ -146,7 +133,7 @@ module.exports = {
           'docker-practice-mysql'
          ],
          '/kubernetes/': [
-          ''
+          'k8s-image-pull-policy'
          ],
          '/project/': [
           'qiniu-cli',

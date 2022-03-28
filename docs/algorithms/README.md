@@ -1,3 +1,3 @@
 # Algorithms
 
-Data Structures and Algorithms
+![](https://resource.gocloudcoder.com/gopher-road-algorithms.jpeg)

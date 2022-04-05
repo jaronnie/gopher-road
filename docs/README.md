@@ -24,5 +24,5 @@ features:
   details: Golang 实战项目...
 - title: 推荐阅读
   details: 书籍,leetcode,代码规范...
-footer: MIT Licensed | Copyright © 2022 jaronnie
+  footer: MIT Licensed | Copyright © 2022 jaronnie
 ---

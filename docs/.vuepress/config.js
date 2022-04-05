@@ -71,6 +71,14 @@ module.exports = {
             ]
           },
           {
+            title: '范型学习',
+            collapsable: true,
+            children: [
+              { title: '概念介绍', path: '/golang/generic-learn/start' },
+              { title: 'slice 范型使用', path: '/golang/generic-learn/slices' },
+            ]
+          },
+          {
             title: 'web 框架',
             collapsable: true,
             children: [

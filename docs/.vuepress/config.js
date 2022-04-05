@@ -19,6 +19,12 @@ module.exports = {
     '@vuepress/back-to-top',
   ],
   themeConfig: {
+    repo: 'jaronnie/gopher-road',
+    docsRepo: 'https://github.com/jaronnie/gopher-road',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinks: true, // 底部增加编辑此页
+    lastUpdated: 'Last Updated', // 最近更新时间
     logo: 'https://resource.gocloudcoder.com/logo.jpeg',
     locales: {  
       '/': {
@@ -26,10 +32,6 @@ module.exports = {
        selectText: '选择语言',
        // 该语言在下拉菜单中的标签
        label: '简体中文',
-       // 编辑链接文字
-       repo: 'jaronnie/gopher-road',
-       docsDir: 'docs',
-       editLinkText: '在 GitHub 上编辑此页',
        // Service Worker 的配置
        serviceWorker: {
          updatePopup: {

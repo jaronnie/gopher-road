@@ -19,12 +19,11 @@ module.exports = {
     '@vuepress/back-to-top',
   ],
   themeConfig: {
-    repo: 'jaronnie/gopher-road',
     docsRepo: 'https://github.com/jaronnie/gopher-road',
     docsBranch: 'main',
     docsDir: 'docs',
     editLinks: true, // 底部增加编辑此页
-    lastUpdated: 'Last Updated', // 最近更新时间
+    // lastUpdated: 'Last Updated', // 最近更新时间
     logo: 'https://resource.gocloudcoder.com/logo.jpeg',
     locales: {  
       '/': {

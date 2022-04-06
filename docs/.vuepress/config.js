@@ -100,6 +100,13 @@ module.exports = {
               },
             ]
           },
+          {
+            title: '其他',
+            collapsable: true,
+            children: [
+              { title: 'golang 编译成 so 后 C 调用', path: '/golang/others/golang-so-example' },
+            ]
+          },
          ],
          '/linux/': [
            'why-need-linux',

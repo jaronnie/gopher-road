@@ -5,6 +5,7 @@
 ## 标准库
 
 * [Go 时间处理库](./standard-library/time.md)
+* [Go 获取操作系统信息](./standard-library/os.md)
 
 ## 第三方库
 

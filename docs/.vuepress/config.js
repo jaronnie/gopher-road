@@ -59,6 +59,7 @@ module.exports = {
             collapsable: true,
             children: [
               { title: 'Go time 时间处理', path: '/golang/standard-library/time' },
+              { title: 'Go os 系统信息', path: '/golang/standard-library/os' },
             ]
           },
           {

@@ -16,4 +16,8 @@
 
 [gopher-road](https://gopher-road.jaronnie.com)
 
+## CONTRIBUTE
+
+[CONTRIBUTE](CONTRIBUTE.md)
+
 

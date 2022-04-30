@@ -16,6 +16,10 @@ func main() {
 }
 ```
 
+
+
+
+
 ## 分析web服务的流程
 
 1. 当我们开启上面的服务的时候`go run main.go`，此时在ListenAndServe方法会先创建一个`Server`结构。
@@ -49,6 +53,8 @@ func (srv *Server) ListenAndServe() error {
    return srv.Serve(ln)
 }
 ```
+
+
 
 3.`Serve` 函数中，用了一个 for 循环，通过 `l.Accept`不断接收从客户端传进来的请求连接。当接收到了一个新的请求连接的时候，通过 srv.NewConn创建了一个连接结构（`http.conn`），并创建一个 Goroutine 为这个请求连接对应服务（`c.serve`）。也就是说只要服务端监听到了服务，就会开启一个goroutine。
 (这里只贴上了主要的代码，因为这个函数的逻辑较多)
@@ -89,6 +95,8 @@ for {
    c.setState(c.rwc, StateNew, runHooks) // before Serve can return
    go c.serve(connCtx)
 ```
+
+
 4.`c.serve`代码量很大，但是只要知道它的功能是判断本次 HTTP 请求是否需要升级为 HTTPs，接着创建读文本的 reader 和写文本的 buffer，再进一步读取本次请求数据。
 （`下面代码只是很少的一部分，因为serve的函数量太大，最最重要的就是serverHandler{c.server}.ServeHTTP(w, w.req)，大家可以在此函数的大概1930行左右看到下面的代码，go1.17`）
 
@@ -108,6 +116,8 @@ if !w.shouldReuseConnection() {
 c.setState(c.rwc, StateIdle, runHooks)
 c.curReq.Store((*response)(nil))
 ```
+
+
 
 5.`serverHandler{c.server}.ServeHTTP(w, w.req)`这个是最重要的函数，也就是说如果你在服务开始的时候自定义了handler，那么就使用你自定义的，如果没有，就使用go默认的。`也就是说，只要传入任何实现了 ServerHTTP接口的实例，所有的HTTP请求，就都交给了该实例处理了。`
 
@@ -145,6 +155,8 @@ func (sh serverHandler) ServeHTTP(rw ResponseWriter, req *Request) {
    handler.ServeHTTP(rw, req)
 }
 ```
+
+
 
 6.经过上面的分析我们也就知道了go语言web服务的大致流程，也就是说如果我们想要修改web服务，或者说定制web，那么我们只需要自定义handler就可以完成了。
 
@@ -311,5 +323,13 @@ func main() {
 
 在理解完这篇文章后可以去到兔兔大佬的博客进行web框架的实战，相信大家肯定更容易理解。
 
+参考链接：
 
-附 ： 部分代码摘自 go源码，极客兔兔，叶剑峰博客，httprouter源码
+[极客兔兔](https://geektutu.com/post/gee.html)
+
+[轩脉刃](https://www.jianshu.com/p/21ce90f2a5b7)
+
+
+
+
+

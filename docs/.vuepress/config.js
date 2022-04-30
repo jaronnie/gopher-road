@@ -147,7 +147,8 @@ module.exports = {
           'docker-build-image',
           'docker-dockerfile',
           'docker-practice-ubuntu-ssh',
-          'docker-practice-mysql'
+          'docker-practice-mysql',
+          'docker-manage-image-container.md'
          ],
          '/kubernetes/': [
           'k8s-image-pull-policy'

@@ -22,6 +22,7 @@ git checkout -b patch-1
 如果本地存在 node 环境
 
 ```shell
+npm i
 npm run docs:dev
 # 浏览器访问 localhost:8080
 ```

@@ -15,7 +15,9 @@ git clone git@github.com/xx/gopher-road
 git checkout -b patch-1
 ```
 
-修改完对应的文档和代码后, commit 到 patch-1 中.
+## docs
+
+如需路由配置, 请参照 `docs/.vuepress/config.js` 对各个模块的设置进行对应的更新或追加
 
 ## 本地测试文档
 

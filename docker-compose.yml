@@ -1,0 +1,10 @@
+services:
+  gopher-road:
+    image: node:14.17.1-alpine3.13
+    container_name: gopher-road-docs
+    working_dir: /gopher-road
+    command: sh -c 'npm i; npm run docs:dev'
+    volumes:
+      - $PWD:/gopher-road
+    ports:
+      - '28080:8080'

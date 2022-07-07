@@ -109,6 +109,7 @@ module.exports = {
             collapsable: true,
             children: [
               { title: 'golang 编译成 so 后 C 调用', path: '/golang/others/golang-so-example' },
+              { title: 'golang 文件锁 flock', path: '/golang/others/golang-file-lock' },
             ]
           },
          ],

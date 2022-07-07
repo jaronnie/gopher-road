@@ -2,6 +2,7 @@
 .DS_store
 node_modules/
 package-lock.json
-code/golang/standard-library
+code/golang/standard-library/*
 code/golang/third-party-library
 code/golang/web-frame/
+!code/golang/standard-library/syscall

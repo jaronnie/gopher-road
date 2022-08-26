@@ -39,10 +39,22 @@
 修改为如下
 
 ```shell
-<video src="https://resource.gocloudcoder.com/屏幕录制2022-08-26 上午10.51.31.mov"></video>
+<iframe 
+    width="800" 
+    height="450" 
+    src="https://resource.gocloudcoder.com/2022.08.26.10.51.31.mp4"
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
 ```
 
-<video src="https://resource.gocloudcoder.com/屏幕录制2022-08-26 上午10.51.31.mov"></video>
+<iframe 
+    width="800" 
+    height="450" 
+    src="https://resource.gocloudcoder.com/2022.08.26.10.51.31.mov"
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
 
 ## ci/cd
 

@@ -167,6 +167,7 @@ module.exports = {
           'go-code-guide',
           'go-books-read',
           'go-leetcode',
+          'auto-blog'
          ]
        }
       },

@@ -120,7 +120,8 @@ module.exports = {
            'silversearcher-ag',
            'grep-sed-awk',
            'compress-decompress',
-           'copy-compare-cut'
+           'copy-compare-cut',
+           'ssh-free-password'
          ],
          '/algorithms/': [
            'kahan-summation',

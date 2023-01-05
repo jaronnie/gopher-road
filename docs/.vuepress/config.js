@@ -129,7 +129,8 @@ module.exports = {
          '/codeManage/': [
            'gomodule',
            'git-workflow',
-           'jenkins-go'
+           'jenkins-go',
+           'git-lfs',
          ],
          '/middleware/': [
           {

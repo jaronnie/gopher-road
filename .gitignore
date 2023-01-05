@@ -6,3 +6,4 @@ code/golang/standard-library/*
 code/golang/third-party-library
 code/golang/web-frame/
 !code/golang/standard-library/syscall
+log/

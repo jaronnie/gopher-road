@@ -4,6 +4,8 @@
 
 将本地 `~/.ssh/id_rsa.pub` 文件内容追加到远程服务器 `~/.ssh/authorized_keys` 文件中。
 
+并确保 `~/.ssh/authorized_keys` 文件的权限是 600
+
 ## ssh alias
 
 实现便捷登录如 ssh xxx 即可完成。

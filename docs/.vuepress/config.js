@@ -63,7 +63,7 @@ module.exports = {
             ]
           },
           {
-            title: '第三方库standard-library',
+            title: '第三方库',
             collapsable: true,
             children: [
               { title: 'Go 类型转换神器 cast', path: '/golang/third-party-library/cast' },

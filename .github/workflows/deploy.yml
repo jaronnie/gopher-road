@@ -33,3 +33,10 @@ jobs:
           source: "dist/*"
           target: ${{ secrets.SITEPATH }}
           strip_components: 1
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          BRANCH: main
+          FOLDER: docs/.vuepress/dist
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

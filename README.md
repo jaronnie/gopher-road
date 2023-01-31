@@ -12,10 +12,6 @@
 * [项目实战](docs/project/)
 * [推荐阅读](docs/recommendation/)
 
-## 在线阅读
-
-[gopher-road](https://gopher-road.jaronnie.com)
-
 ## CONTRIBUTE
 
 [CONTRIBUTE](CONTRIBUTE.md)

@@ -1,13 +1,13 @@
 ---
 home: true
 heroText: gopher-road
-heroImage: https://resource.gocloudcoder.com/logo.jpeg
+heroImage: https://oss.jaronnie.com/logo.jpeg
 tagline: The Road to Go!
 actionText: 开始 →
 actionLink: /golang/
 features:
 - title: Golang
-  details: 基本语法,标准库,第三方库,web框架...  
+  details: 标准库,第三方库,web框架,其他...  
 - title: Linux
   details: 常用命令,shell script...
 - title: 算法与数据结构

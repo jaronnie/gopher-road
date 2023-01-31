@@ -18,6 +18,6 @@
 
 ## LICENSE
 
-MIT
+[MIT](LICENSE)
 
 

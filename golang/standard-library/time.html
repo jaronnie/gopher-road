@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>time 包 | gopher-road</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="favicon-gopher-road.ico">
+    <meta name="description" content="golang 后端之路">
+    
+    <link rel="preload" href="/gopher-road/assets/css/0.styles.058a0c2c.css" as="style"><link rel="preload" href="/gopher-road/assets/js/app.312f77d6.js" as="script"><link rel="preload" href="/gopher-road/assets/js/3.241cbfc2.js" as="script"><link rel="preload" href="/gopher-road/assets/js/32.729d1cc5.js" as="script"><link rel="prefetch" href="/gopher-road/assets/js/10.02306c81.js"><link rel="prefetch" href="/gopher-road/assets/js/11.fe86c79a.js"><link rel="prefetch" href="/gopher-road/assets/js/12.f153aeca.js"><link rel="prefetch" href="/gopher-road/assets/js/13.2860a930.js"><link rel="prefetch" href="/gopher-road/assets/js/14.f6920b42.js"><link rel="prefetch" href="/gopher-road/assets/js/15.c5c23bdf.js"><link rel="prefetch" href="/gopher-road/assets/js/16.beeea7d1.js"><link rel="prefetch" href="/gopher-road/assets/js/17.bebd1246.js"><link rel="prefetch" href="/gopher-road/assets/js/18.8235c0dc.js"><link rel="prefetch" href="/gopher-road/assets/js/19.8c75b1f6.js"><link rel="prefetch" href="/gopher-road/assets/js/20.9f919dc4.js"><link rel="prefetch" href="/gopher-road/assets/js/21.9a8b7a3a.js"><link rel="prefetch" href="/gopher-road/assets/js/22.91b6d0a2.js"><link rel="prefetch" href="/gopher-road/assets/js/23.b4be7a19.js"><link rel="prefetch" href="/gopher-road/assets/js/24.0b151b87.js"><link rel="prefetch" href="/gopher-road/assets/js/25.46ab56bf.js"><link rel="prefetch" href="/gopher-road/assets/js/26.2e49ce1c.js"><link rel="prefetch" href="/gopher-road/assets/js/27.50ac8282.js"><link rel="prefetch" href="/gopher-road/assets/js/28.07f7d425.js"><link rel="prefetch" href="/gopher-road/assets/js/29.7c53c20e.js"><link rel="prefetch" href="/gopher-road/assets/js/30.741a1b36.js"><link rel="prefetch" href="/gopher-road/assets/js/31.6d2da590.js"><link rel="prefetch" href="/gopher-road/assets/js/33.636fc2b3.js"><link rel="prefetch" href="/gopher-road/assets/js/34.c213c758.js"><link rel="prefetch" href="/gopher-road/assets/js/35.908fd2eb.js"><link rel="prefetch" href="/gopher-road/assets/js/36.cdef73ff.js"><link rel="prefetch" href="/gopher-road/assets/js/37.40d4ca5b.js"><link rel="prefetch" href="/gopher-road/assets/js/38.4655b5a6.js"><link rel="prefetch" href="/gopher-road/assets/js/39.e6bc1439.js"><link rel="prefetch" href="/gopher-road/assets/js/4.0f5b739c.js"><link rel="prefetch" href="/gopher-road/assets/js/40.2889bef3.js"><link rel="prefetch" href="/gopher-road/assets/js/41.7dff8257.js"><link rel="prefetch" href="/gopher-road/assets/js/42.5e99ac49.js"><link rel="prefetch" href="/gopher-road/assets/js/43.3270857c.js"><link rel="prefetch" href="/gopher-road/assets/js/44.7271f6ee.js"><link rel="prefetch" href="/gopher-road/assets/js/45.b314ca6b.js"><link rel="prefetch" href="/gopher-road/assets/js/46.a12abc42.js"><link rel="prefetch" href="/gopher-road/assets/js/47.d94d7440.js"><link rel="prefetch" href="/gopher-road/assets/js/48.7379d269.js"><link rel="prefetch" href="/gopher-road/assets/js/49.14593da7.js"><link rel="prefetch" href="/gopher-road/assets/js/5.22aa753a.js"><link rel="prefetch" href="/gopher-road/assets/js/50.80ba5700.js"><link rel="prefetch" href="/gopher-road/assets/js/51.ec7a60cd.js"><link rel="prefetch" href="/gopher-road/assets/js/52.f13968c2.js"><link rel="prefetch" href="/gopher-road/assets/js/53.c4177ba2.js"><link rel="prefetch" href="/gopher-road/assets/js/54.46bc3685.js"><link rel="prefetch" href="/gopher-road/assets/js/55.56e0d147.js"><link rel="prefetch" href="/gopher-road/assets/js/56.3c260528.js"><link rel="prefetch" href="/gopher-road/assets/js/57.688cc924.js"><link rel="prefetch" href="/gopher-road/assets/js/58.22ede40d.js"><link rel="prefetch" href="/gopher-road/assets/js/59.df0fe094.js"><link rel="prefetch" href="/gopher-road/assets/js/6.96b06b74.js"><link rel="prefetch" href="/gopher-road/assets/js/60.94131ca1.js"><link rel="prefetch" href="/gopher-road/assets/js/61.7067c464.js"><link rel="prefetch" href="/gopher-road/assets/js/62.f8f8aadb.js"><link rel="prefetch" href="/gopher-road/assets/js/63.bcb9ea41.js"><link rel="prefetch" href="/gopher-road/assets/js/64.f0a740d2.js"><link rel="prefetch" href="/gopher-road/assets/js/7.e1cb412f.js"><link rel="prefetch" href="/gopher-road/assets/js/8.30a3318e.js"><link rel="prefetch" href="/gopher-road/assets/js/9.f8e7dd6d.js"><link rel="prefetch" href="/gopher-road/assets/js/vendors~docsearch.f2336eae.js">
+    <link rel="stylesheet" href="/gopher-road/assets/css/0.styles.058a0c2c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/gopher-road/" class="home-link router-link-active"><img src="https://resource.gocloudcoder.com/logo.jpeg" alt="gopher-road" class="logo"> <span class="site-name can-hide">gopher-road</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/gopher-road/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/gopher-road/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/gopher-road/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/gopher-road/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/gopher-road/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/gopher-road/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/gopher-road/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/gopher-road/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/gopher-road/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/gopher-road/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/gopher-road/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/gopher-road/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/gopher-road/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/gopher-road/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/gopher-road/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/gopher-road/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/gopher-road/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/gopher-road/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>标准库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gopher-road/golang/standard-library/time.html" aria-current="page" class="active sidebar-link">Go time 时间处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/gopher-road/golang/standard-library/time.html#获取当前时间" class="sidebar-link">获取当前时间</a></li><li class="sidebar-sub-header"><a href="/gopher-road/golang/standard-library/time.html#将当前时间转换为时间戳-ns" class="sidebar-link">将当前时间转换为时间戳(ns)</a></li><li class="sidebar-sub-header"><a href="/gopher-road/golang/standard-library/time.html#获取当前时间的前一秒-前十分钟-前一天等" class="sidebar-link">获取当前时间的前一秒 前十分钟 前一天等</a></li><li class="sidebar-sub-header"><a href="/gopher-road/golang/standard-library/time.html#定时器-time-ticker" class="sidebar-link">定时器 time.Ticker</a></li></ul></li><li><a href="/gopher-road/golang/standard-library/os.html" class="sidebar-link">Go os 系统信息</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>第三方库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>范型学习</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="time-包"><a href="#time-包" class="header-anchor">#</a> time 包</h1> <h2 id="获取当前时间"><a href="#获取当前时间" class="header-anchor">#</a> 获取当前时间</h2> <div class="language-go extra-class"><pre class="language-go"><code>now <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">Now</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>返回的类型为 Time 类型</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">type</span> Time <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	<span class="token comment">// wall and ext encode the wall time seconds, wall time nanoseconds,</span>
+	<span class="token comment">// and optional monotonic clock reading in nanoseconds.</span>
+	<span class="token comment">//</span>
+	<span class="token comment">// From high to low bit position, wall encodes a 1-bit flag (hasMonotonic),</span>
+	<span class="token comment">// a 33-bit seconds field, and a 30-bit wall time nanoseconds field.</span>
+	<span class="token comment">// The nanoseconds field is in the range [0, 999999999].</span>
+	<span class="token comment">// If the hasMonotonic bit is 0, then the 33-bit field must be zero</span>
+	<span class="token comment">// and the full signed 64-bit wall seconds since Jan 1 year 1 is stored in ext.</span>
+	<span class="token comment">// If the hasMonotonic bit is 1, then the 33-bit field holds a 33-bit</span>
+	<span class="token comment">// unsigned wall seconds since Jan 1 year 1885, and ext holds a</span>
+	<span class="token comment">// signed 64-bit monotonic clock reading, nanoseconds since process start.</span>
+	wall <span class="token builtin">uint64</span>
+	ext  <span class="token builtin">int64</span>
+
+	<span class="token comment">// loc specifies the Location that should be used to</span>
+	<span class="token comment">// determine the minute, hour, month, day, and year</span>
+	<span class="token comment">// that correspond to this Time.</span>
+	<span class="token comment">// The nil location means UTC.</span>
+	<span class="token comment">// All UTC times are represented with loc==nil, never loc==&amp;utcLoc.</span>
+	loc <span class="token operator">*</span>Location
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="将当前时间转换为时间戳-ns"><a href="#将当前时间转换为时间戳-ns" class="header-anchor">#</a> 将当前时间转换为时间戳(ns)</h2> <div class="language-go extra-class"><pre class="language-go"><code>nowNs <span class="token operator">:=</span> now<span class="token punctuation">.</span><span class="token function">UnixNano</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>返回的类型为 int64</p> <h2 id="获取当前时间的前一秒-前十分钟-前一天等"><a href="#获取当前时间的前一秒-前十分钟-前一天等" class="header-anchor">#</a> 获取当前时间的前一秒 前十分钟 前一天等</h2> <div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 获取当前时间的前1s</span>
+s<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">ParseDuration</span><span class="token punctuation">(</span><span class="token string">&quot;-1s&quot;</span><span class="token punctuation">)</span>
+nowBefore1s <span class="token operator">:=</span> now<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">*</span> s<span class="token punctuation">)</span>
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 获取当前时间的前10分钟</span>
+m<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">ParseDuration</span><span class="token punctuation">(</span><span class="token string">&quot;-1m&quot;</span><span class="token punctuation">)</span>
+nowBefore10m <span class="token operator">:=</span> now<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token number">10</span> <span class="token operator">*</span> m<span class="token punctuation">)</span>
+</code></pre></div><div class="language-go extra-class"><pre class="language-go"><code><span class="token comment">// 获取当前时间的前1天</span>
+d<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">ParseDuration</span><span class="token punctuation">(</span><span class="token string">&quot;-24h&quot;</span><span class="token punctuation">)</span>
+nowBefore1day <span class="token operator">:=</span> now<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">*</span> d<span class="token punctuation">)</span>
+</code></pre></div><h2 id="定时器-time-ticker"><a href="#定时器-time-ticker" class="header-anchor">#</a> 定时器 time.Ticker</h2> <h3 id="每隔一秒钟执行一次"><a href="#每隔一秒钟执行一次" class="header-anchor">#</a> 每隔一秒钟执行一次</h3> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">func</span> <span class="token function">EverySecondPrint</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	ticker <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">NewTicker</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span> <span class="token comment">// 每隔1s进行一次打印</span>
+	<span class="token keyword">for</span> <span class="token punctuation">{</span>
+		<span class="token operator">&lt;-</span>ticker<span class="token punctuation">.</span>C
+		fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;这是ticker的打印&quot;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="指定执行时间"><a href="#指定执行时间" class="header-anchor">#</a> 指定执行时间</h3> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">func</span> <span class="token function">JustOneSecond</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	ticker <span class="token operator">:=</span> time<span class="token punctuation">.</span><span class="token function">NewTicker</span><span class="token punctuation">(</span>time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+	<span class="token keyword">for</span> <span class="token punctuation">{</span>
+		<span class="token keyword">select</span> <span class="token punctuation">{</span>
+		<span class="token keyword">case</span> <span class="token operator">&lt;-</span> ticker<span class="token punctuation">.</span>C<span class="token punctuation">:</span>
+			fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;ticker&quot;</span><span class="token punctuation">)</span>
+		<span class="token keyword">case</span> <span class="token operator">&lt;-</span> ctx<span class="token punctuation">.</span><span class="token function">Done</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+			<span class="token keyword">return</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  ctx<span class="token punctuation">,</span> cancel <span class="token operator">:=</span> context<span class="token punctuation">.</span><span class="token function">WithTimeout</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+	<span class="token keyword">defer</span> <span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token function">JustOneSecond</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/jaronnie/gopher-road/edit/main/docs/golang/standard-library/time.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/gopher-road/golang/standard-library/os.html">
+        Go os 系统信息
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/gopher-road/assets/js/app.312f77d6.js" defer></script><script src="/gopher-road/assets/js/3.241cbfc2.js" defer></script><script src="/gopher-road/assets/js/32.729d1cc5.js" defer></script>
+  </body>
+</html>

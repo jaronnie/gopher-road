@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一个好的配置系统是什么样的？ | gopher-road</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="favicon-gopher-road.ico">
+    <meta name="description" content="golang 后端之路">
+    
+    <link rel="preload" href="/gopher-road/assets/css/0.styles.058a0c2c.css" as="style"><link rel="preload" href="/gopher-road/assets/js/app.312f77d6.js" as="script"><link rel="preload" href="/gopher-road/assets/js/3.241cbfc2.js" as="script"><link rel="preload" href="/gopher-road/assets/js/37.40d4ca5b.js" as="script"><link rel="prefetch" href="/gopher-road/assets/js/10.02306c81.js"><link rel="prefetch" href="/gopher-road/assets/js/11.fe86c79a.js"><link rel="prefetch" href="/gopher-road/assets/js/12.f153aeca.js"><link rel="prefetch" href="/gopher-road/assets/js/13.2860a930.js"><link rel="prefetch" href="/gopher-road/assets/js/14.f6920b42.js"><link rel="prefetch" href="/gopher-road/assets/js/15.c5c23bdf.js"><link rel="prefetch" href="/gopher-road/assets/js/16.beeea7d1.js"><link rel="prefetch" href="/gopher-road/assets/js/17.bebd1246.js"><link rel="prefetch" href="/gopher-road/assets/js/18.8235c0dc.js"><link rel="prefetch" href="/gopher-road/assets/js/19.8c75b1f6.js"><link rel="prefetch" href="/gopher-road/assets/js/20.9f919dc4.js"><link rel="prefetch" href="/gopher-road/assets/js/21.9a8b7a3a.js"><link rel="prefetch" href="/gopher-road/assets/js/22.91b6d0a2.js"><link rel="prefetch" href="/gopher-road/assets/js/23.b4be7a19.js"><link rel="prefetch" href="/gopher-road/assets/js/24.0b151b87.js"><link rel="prefetch" href="/gopher-road/assets/js/25.46ab56bf.js"><link rel="prefetch" href="/gopher-road/assets/js/26.2e49ce1c.js"><link rel="prefetch" href="/gopher-road/assets/js/27.50ac8282.js"><link rel="prefetch" href="/gopher-road/assets/js/28.07f7d425.js"><link rel="prefetch" href="/gopher-road/assets/js/29.7c53c20e.js"><link rel="prefetch" href="/gopher-road/assets/js/30.741a1b36.js"><link rel="prefetch" href="/gopher-road/assets/js/31.6d2da590.js"><link rel="prefetch" href="/gopher-road/assets/js/32.729d1cc5.js"><link rel="prefetch" href="/gopher-road/assets/js/33.636fc2b3.js"><link rel="prefetch" href="/gopher-road/assets/js/34.c213c758.js"><link rel="prefetch" href="/gopher-road/assets/js/35.908fd2eb.js"><link rel="prefetch" href="/gopher-road/assets/js/36.cdef73ff.js"><link rel="prefetch" href="/gopher-road/assets/js/38.4655b5a6.js"><link rel="prefetch" href="/gopher-road/assets/js/39.e6bc1439.js"><link rel="prefetch" href="/gopher-road/assets/js/4.0f5b739c.js"><link rel="prefetch" href="/gopher-road/assets/js/40.2889bef3.js"><link rel="prefetch" href="/gopher-road/assets/js/41.7dff8257.js"><link rel="prefetch" href="/gopher-road/assets/js/42.5e99ac49.js"><link rel="prefetch" href="/gopher-road/assets/js/43.3270857c.js"><link rel="prefetch" href="/gopher-road/assets/js/44.7271f6ee.js"><link rel="prefetch" href="/gopher-road/assets/js/45.b314ca6b.js"><link rel="prefetch" href="/gopher-road/assets/js/46.a12abc42.js"><link rel="prefetch" href="/gopher-road/assets/js/47.d94d7440.js"><link rel="prefetch" href="/gopher-road/assets/js/48.7379d269.js"><link rel="prefetch" href="/gopher-road/assets/js/49.14593da7.js"><link rel="prefetch" href="/gopher-road/assets/js/5.22aa753a.js"><link rel="prefetch" href="/gopher-road/assets/js/50.80ba5700.js"><link rel="prefetch" href="/gopher-road/assets/js/51.ec7a60cd.js"><link rel="prefetch" href="/gopher-road/assets/js/52.f13968c2.js"><link rel="prefetch" href="/gopher-road/assets/js/53.c4177ba2.js"><link rel="prefetch" href="/gopher-road/assets/js/54.46bc3685.js"><link rel="prefetch" href="/gopher-road/assets/js/55.56e0d147.js"><link rel="prefetch" href="/gopher-road/assets/js/56.3c260528.js"><link rel="prefetch" href="/gopher-road/assets/js/57.688cc924.js"><link rel="prefetch" href="/gopher-road/assets/js/58.22ede40d.js"><link rel="prefetch" href="/gopher-road/assets/js/59.df0fe094.js"><link rel="prefetch" href="/gopher-road/assets/js/6.96b06b74.js"><link rel="prefetch" href="/gopher-road/assets/js/60.94131ca1.js"><link rel="prefetch" href="/gopher-road/assets/js/61.7067c464.js"><link rel="prefetch" href="/gopher-road/assets/js/62.f8f8aadb.js"><link rel="prefetch" href="/gopher-road/assets/js/63.bcb9ea41.js"><link rel="prefetch" href="/gopher-road/assets/js/64.f0a740d2.js"><link rel="prefetch" href="/gopher-road/assets/js/7.e1cb412f.js"><link rel="prefetch" href="/gopher-road/assets/js/8.30a3318e.js"><link rel="prefetch" href="/gopher-road/assets/js/9.f8e7dd6d.js"><link rel="prefetch" href="/gopher-road/assets/js/vendors~docsearch.f2336eae.js">
+    <link rel="stylesheet" href="/gopher-road/assets/css/0.styles.058a0c2c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/gopher-road/" class="home-link router-link-active"><img src="https://resource.gocloudcoder.com/logo.jpeg" alt="gopher-road" class="logo"> <span class="site-name can-hide">gopher-road</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/gopher-road/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/gopher-road/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/gopher-road/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/gopher-road/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/gopher-road/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/gopher-road/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/gopher-road/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/gopher-road/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/gopher-road/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/gopher-road/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/gopher-road/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/gopher-road/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/gopher-road/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/gopher-road/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/gopher-road/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/gopher-road/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/gopher-road/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/gopher-road/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>标准库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>第三方库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/gopher-road/golang/third-party-library/cast.html" class="sidebar-link">Go 类型转换神器 cast</a></li><li><a href="/gopher-road/golang/third-party-library/excelize.html" class="sidebar-link">Go 操作 excel 利器 excelize</a></li><li><a href="/gopher-road/golang/third-party-library/commonregex.html" class="sidebar-link">Go 常用正则表达式 commonregex</a></li><li><a href="/gopher-road/golang/third-party-library/tail.html" class="sidebar-link">Go 对标 linux tail 命令的 tail 包</a></li><li><a href="/gopher-road/golang/third-party-library/viper.html" aria-current="page" class="active sidebar-link">Go 使用 viper 最佳实践</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>范型学习</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="一个好的配置系统是什么样的"><a href="#一个好的配置系统是什么样的" class="header-anchor">#</a> 一个好的配置系统是什么样的？</h4> <ul><li><p>能读取不同格式的配置文件（yaml,.env,.toml）</p></li> <li><p>设置配置项</p></li> <li><p>读取配置项</p></li> <li><p>能动态的读取配置</p></li> <li><p>能满足生产的需求（如：我们定义了.env .env.test，只需要在启动的时候加一个参数，就能进行合适的转化 ）</p></li></ul> <h4 id="viper的使用demo"><a href="#viper的使用demo" class="header-anchor">#</a> viper的使用demo</h4> <ul><li>main.go</li></ul> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;fmt&quot;</span>
+	<span class="token string">&quot;github.com/spf13/viper&quot;</span>
+	<span class="token string">&quot;log&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	viper<span class="token punctuation">.</span><span class="token function">SetConfigName</span><span class="token punctuation">(</span><span class="token string">&quot;conf.yaml&quot;</span><span class="token punctuation">)</span> <span class="token comment">//读取文件的名字</span>
+	viper<span class="token punctuation">.</span><span class="token function">SetConfigType</span><span class="token punctuation">(</span><span class="token string">&quot;yaml&quot;</span><span class="token punctuation">)</span>     <span class="token comment">//配置文件的格式</span>
+	viper<span class="token punctuation">.</span><span class="token function">AddConfigPath</span><span class="token punctuation">(</span><span class="token string">&quot;viper_demo&quot;</span><span class="token punctuation">)</span> <span class="token comment">//文件的路径</span>
+
+	err <span class="token operator">:=</span> viper<span class="token punctuation">.</span><span class="token function">ReadInConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	viper<span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;value&quot;</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span><span class="token string">&quot;read config failed: %v&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;mysql ip: &quot;</span><span class="token punctuation">,</span> viper<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;MYSQL.ip&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;mysql port: &quot;</span><span class="token punctuation">,</span> viper<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;MYSQL.port&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">&quot;k:&quot;</span><span class="token punctuation">,</span>viper<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;key&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>yaml</li></ul> <div class="language- extra-class"><pre class="language-text"><code>MYSQL:
+  port : 8080
+  ip : 127.0.0.1
+</code></pre></div><h4 id="马上开始实践-下面是封装完后暴露的函数-大家可以粘贴到goland-自己跑一遍的话应该很快就能理解"><a href="#马上开始实践-下面是封装完后暴露的函数-大家可以粘贴到goland-自己跑一遍的话应该很快就能理解" class="header-anchor">#</a> 马上开始实践，下面是封装完后暴露的函数（大家可以粘贴到GOLAND，自己跑一遍的话应该很快就能理解）</h4> <div class="language-go extra-class"><pre class="language-go"><code>conf<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">//设置配置</span>
+conf<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>   <span class="token comment">//读取配置</span>
+<span class="token punctuation">.</span>env    
+<span class="token punctuation">.</span>env<span class="token punctuation">.</span>test   <span class="token comment">//配置文件</span>
+<span class="token keyword">go</span> run main<span class="token punctuation">.</span><span class="token keyword">go</span> <span class="token operator">--</span>env<span class="token operator">=</span>test <span class="token comment">//读取.env.test,默认读取.env</span>
+</code></pre></div><h3 id="最佳实践"><a href="#最佳实践" class="header-anchor">#</a> 最佳实践</h3> <p>（下面的话会直接给出代码，不过主要的部分都给有注释，需要说明的一点是下面使用的配置；类型是 .env）</p> <ul><li>main.go</li></ul> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;awesomeProject4/conf&quot;</span>
+	<span class="token string">&quot;flag&quot;</span>
+	<span class="token string">&quot;fmt&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	conf<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span><span class="token string">&quot;app&quot;</span><span class="token punctuation">,</span><span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">{</span>
+			<span class="token string">&quot;port&quot;</span><span class="token punctuation">:</span> conf<span class="token punctuation">.</span><span class="token function">Env</span><span class="token punctuation">(</span><span class="token string">&quot;port&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;8888&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+			<span class="token string">&quot;ip&quot;</span> <span class="token punctuation">:</span> conf<span class="token punctuation">.</span><span class="token function">Env</span><span class="token punctuation">(</span><span class="token string">&quot;ip&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;123456&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">var</span> env <span class="token builtin">string</span>
+	flag<span class="token punctuation">.</span><span class="token function">StringVar</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>env<span class="token punctuation">,</span> <span class="token string">&quot;env&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;自己配置 如--env=testing &quot;</span><span class="token punctuation">)</span>
+	flag<span class="token punctuation">.</span><span class="token function">Parse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	conf<span class="token punctuation">.</span><span class="token function">InitConfig</span><span class="token punctuation">(</span>env<span class="token punctuation">)</span>
+	port <span class="token operator">:=</span> conf<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;app.port&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>port<span class="token punctuation">)</span>
+
+	ip <span class="token operator">:=</span> conf<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">&quot;app.ip&quot;</span><span class="token punctuation">)</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>ip<span class="token punctuation">)</span>
+	
+<span class="token punctuation">}</span>
+
+</code></pre></div><ul><li>conf/conf.go</li></ul> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> conf
+
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;github.com/spf13/cast&quot;</span>
+	viperlib <span class="token string">&quot;github.com/spf13/viper&quot;</span> <span class="token comment">// 自定义包名，避免与内置 viper 实例冲突</span>
+	<span class="token string">&quot;os&quot;</span>
+<span class="token punctuation">)</span>
+<span class="token comment">// viper 库实例</span>
+<span class="token keyword">var</span> viper <span class="token operator">*</span>viperlib<span class="token punctuation">.</span>Viper
+
+<span class="token comment">// ConfigFunc 动态加载配置信息</span>
+<span class="token keyword">type</span> ConfigFunc <span class="token keyword">func</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token comment">// ConfigFuncs 先加载到此数组，loadConfig 再动态生成配置信息</span>
+<span class="token keyword">var</span> ConfigFuncs <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ConfigFunc
+
+<span class="token keyword">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">// 1. 初始化 Viper 库</span>
+	viper <span class="token operator">=</span> viperlib<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">// 2. 配置类型，支持 &quot;json&quot;, &quot;toml&quot;, &quot;yaml&quot;, &quot;yml&quot;, &quot;properties&quot;,</span>
+	<span class="token comment">//             &quot;props&quot;, &quot;prop&quot;, &quot;env&quot;, &quot;dotenv&quot;</span>
+	viper<span class="token punctuation">.</span><span class="token function">SetConfigType</span><span class="token punctuation">(</span><span class="token string">&quot;env&quot;</span><span class="token punctuation">)</span>
+	viper<span class="token punctuation">.</span><span class="token function">AddConfigPath</span><span class="token punctuation">(</span><span class="token string">&quot;.&quot;</span><span class="token punctuation">)</span>
+	viper<span class="token punctuation">.</span><span class="token function">SetEnvPrefix</span><span class="token punctuation">(</span><span class="token string">&quot;appenv&quot;</span><span class="token punctuation">)</span>
+	viper<span class="token punctuation">.</span><span class="token function">AutomaticEnv</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	ConfigFuncs <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span>ConfigFunc<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">InitConfig</span><span class="token punctuation">(</span>env <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token comment">// 1. 加载环境变量</span>
+	<span class="token function">loadEnv</span><span class="token punctuation">(</span>env<span class="token punctuation">)</span>
+	<span class="token comment">// 2. 注册配置信息</span>
+	<span class="token function">loadConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">loadConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">for</span> name<span class="token punctuation">,</span> fn <span class="token operator">:=</span> <span class="token keyword">range</span> ConfigFuncs <span class="token punctuation">{</span>
+		viper<span class="token punctuation">.</span><span class="token function">Set</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">loadEnv</span><span class="token punctuation">(</span>envSuffix <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	envPath <span class="token operator">:=</span> <span class="token string">&quot;.env&quot;</span>
+	<span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>envSuffix<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+		filepath <span class="token operator">:=</span> <span class="token string">&quot;.env.&quot;</span> <span class="token operator">+</span> envSuffix
+		<span class="token keyword">if</span> <span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">:=</span> os<span class="token punctuation">.</span><span class="token function">Stat</span><span class="token punctuation">(</span>filepath<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			<span class="token comment">// 如 .env.testing 或 .env.stage</span>
+			envPath <span class="token operator">=</span> filepath
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 加载 env</span>
+	viper<span class="token punctuation">.</span><span class="token function">SetConfigName</span><span class="token punctuation">(</span>envPath<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">:=</span> viper<span class="token punctuation">.</span><span class="token function">ReadInConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token function">panic</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">// 监控 .env 文件，变更时重新加载</span>
+	viper<span class="token punctuation">.</span><span class="token function">WatchConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">Env</span><span class="token punctuation">(</span>envName <span class="token builtin">string</span><span class="token punctuation">,</span> defaultValue <span class="token operator">...</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>defaultValue<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token function">internalGet</span><span class="token punctuation">(</span>envName<span class="token punctuation">,</span> defaultValue<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token function">internalGet</span><span class="token punctuation">(</span>envName<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">internalGet</span><span class="token punctuation">(</span>path <span class="token builtin">string</span><span class="token punctuation">,</span> defaultValue <span class="token operator">...</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">{</span>
+	<span class="token comment">// config 或者环境变量不存在的情况</span>
+	<span class="token keyword">if</span> <span class="token operator">!</span>viper<span class="token punctuation">.</span><span class="token function">IsSet</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>  <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>defaultValue<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">0</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> defaultValue<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">return</span> <span class="token boolean">nil</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> viper<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Add 新增配置项</span>
+<span class="token keyword">func</span> <span class="token function">Add</span><span class="token punctuation">(</span>name <span class="token builtin">string</span><span class="token punctuation">,</span> configFn ConfigFunc<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	ConfigFuncs<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> configFn
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">Get</span><span class="token punctuation">(</span>path <span class="token builtin">string</span><span class="token punctuation">,</span> defaultValue <span class="token operator">...</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token function">GetString</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> defaultValue<span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment">// GetString 获取 String 类型的配置信息</span>
+<span class="token keyword">func</span> <span class="token function">GetString</span><span class="token punctuation">(</span>path <span class="token builtin">string</span><span class="token punctuation">,</span> defaultValue <span class="token operator">...</span><span class="token keyword">interface</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token builtin">string</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> cast<span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token function">internalGet</span><span class="token punctuation">(</span>path<span class="token punctuation">,</span> defaultValue<span class="token operator">...</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+
+</code></pre></div><ul><li>.env</li></ul> <div class="language- extra-class"><pre class="language-text"><code>port = 8080
+ip = 127.0.0.1
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/jaronnie/gopher-road/edit/main/docs/golang/third-party-library/viper.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/gopher-road/golang/third-party-library/tail.html" class="prev">
+        Go 对标 linux tail 命令的 tail 包
+      </a></span> <span class="next"><a href="/gopher-road/golang/generic-learn/start.html">
+        概念介绍
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/gopher-road/assets/js/app.312f77d6.js" defer></script><script src="/gopher-road/assets/js/3.241cbfc2.js" defer></script><script src="/gopher-road/assets/js/37.40d4ca5b.js" defer></script>
+  </body>
+</html>

@@ -24,15 +24,15 @@ jobs:
           npm run docs:build
           cp -r docs/.vuepress/dist .
 
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.DOMAIN }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASSWORD }}  
-          source: "dist/*"
-          target: ${{ secrets.SITEPATH }}
-          strip_components: 1
+#      - name: copy file via ssh password
+#        uses: appleboy/scp-action@master
+#        with:
+#          host: ${{ secrets.DOMAIN }}
+#          username: ${{ secrets.USERNAME }}
+#          password: ${{ secrets.PASSWORD }}
+#          source: "dist/*"
+#          target: ${{ secrets.SITEPATH }}
+#          strip_components: 1
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.3

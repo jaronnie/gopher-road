@@ -16,4 +16,8 @@
 
 [CONTRIBUTE](CONTRIBUTE.md)
 
+## LICENSE
+
+MIT
+
 

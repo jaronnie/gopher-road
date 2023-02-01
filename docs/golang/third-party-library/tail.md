@@ -19,7 +19,7 @@ go get github.com/hpcloud/tail/...
 * 首先初始化配置结构体 config
 * 调用 TailFile 函数，并传入文件路径和config，返回有个 tail 的结构体，tail 结构体的 Lines 字段封装了拿到的信息
 
-* 遍历 tail.Lnes 字段，取出信息（注意这里要循环取数据，因为 tail 可以实现实时监控）
+* 遍历 tail.Lines 字段，取出信息（注意这里要循环取数据，因为 tail 可以实现实时监控）
 
  ```go
  package main
@@ -64,6 +64,10 @@ go get github.com/hpcloud/tail/...
  	}
  }
  ```
+
+## 代码示例
+
+* [tail](code/golang/third-party-library/tail)
 
 ## 参考文档
 

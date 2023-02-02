@@ -2,4 +2,4 @@
 
 ## 代码示例
 
-* [golang-plugin-example](code/golang/others/golang-plugin-example)
+* [golang-plugin-example](https://github.com/jaronnie/gopher-road/tree/main/code/golang/others/golang-plugin-example)

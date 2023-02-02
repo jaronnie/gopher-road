@@ -17,13 +17,14 @@ module.exports = {
   },
   plugins: [
     '@vuepress/back-to-top',
+    '@vuepress/last-updated',
   ],
   themeConfig: {
     docsRepo: 'https://github.com/jaronnie/gopher-road',
     docsBranch: 'main',
     docsDir: 'docs',
     editLinks: true, // 底部增加编辑此页
-    // lastUpdated: 'Last Updated', // 最近更新时间
+    lastUpdated: 'Last Updated', // 最近更新时间
     logo: 'https://resource.gocloudcoder.com/logo.jpeg',
     locales: {  
       '/': {
@@ -109,6 +110,7 @@ module.exports = {
             collapsable: true,
             children: [
               { title: 'golang 编译成 so 后 C 调用', path: '/golang/others/golang-so-example' },
+              { title: 'golang plugin 示例', path: '/golang/others/golang-plugin-example' },
               { title: 'golang 文件锁 flock', path: '/golang/others/golang-file-lock' },
               { title: 'golang plan9 汇编', path: '/golang/others/golang-plan9-example' },
             ]

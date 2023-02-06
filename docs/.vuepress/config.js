@@ -131,6 +131,7 @@ module.exports = {
          '/codeManage/': [
            'gomodule',
            'git-workflow',
+           'git-use',
            'jenkins-go',
            'git-lfs',
          ],
@@ -172,7 +173,8 @@ module.exports = {
           'go-code-guide',
           'go-books-read',
           'go-leetcode',
-          'auto-blog'
+          'auto-blog',
+          'github-pages-custom-domain-cdn'
          ]
        }
       },

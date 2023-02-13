@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>mapreduce | gopher-road</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    <link rel="icon" href="favicon-gopher-road.ico">
+    <meta name="description" content="golang 后端之路">
+    
+    <link rel="preload" href="/assets/css/0.styles.b569aa3e.css" as="style"><link rel="preload" href="/assets/js/app.5b07d533.js" as="script"><link rel="preload" href="/assets/js/3.241cbfc2.js" as="script"><link rel="preload" href="/assets/js/39.61837bcc.js" as="script"><link rel="prefetch" href="/assets/js/10.02306c81.js"><link rel="prefetch" href="/assets/js/11.fe86c79a.js"><link rel="prefetch" href="/assets/js/12.f153aeca.js"><link rel="prefetch" href="/assets/js/13.86831be7.js"><link rel="prefetch" href="/assets/js/14.b3239a7e.js"><link rel="prefetch" href="/assets/js/15.43f5c67a.js"><link rel="prefetch" href="/assets/js/16.87a514af.js"><link rel="prefetch" href="/assets/js/17.80a91f2b.js"><link rel="prefetch" href="/assets/js/18.76722cf2.js"><link rel="prefetch" href="/assets/js/19.a253aea1.js"><link rel="prefetch" href="/assets/js/20.edb7e008.js"><link rel="prefetch" href="/assets/js/21.3c679bc4.js"><link rel="prefetch" href="/assets/js/22.98e9e84b.js"><link rel="prefetch" href="/assets/js/23.a63c47ae.js"><link rel="prefetch" href="/assets/js/24.0ef8873a.js"><link rel="prefetch" href="/assets/js/25.f6087eec.js"><link rel="prefetch" href="/assets/js/26.fd3b52fe.js"><link rel="prefetch" href="/assets/js/27.61322573.js"><link rel="prefetch" href="/assets/js/28.a840ab7b.js"><link rel="prefetch" href="/assets/js/29.2b6ecc1c.js"><link rel="prefetch" href="/assets/js/30.416450f1.js"><link rel="prefetch" href="/assets/js/31.bb67a77d.js"><link rel="prefetch" href="/assets/js/32.85cc942f.js"><link rel="prefetch" href="/assets/js/33.ea3a38a8.js"><link rel="prefetch" href="/assets/js/34.6d439c4f.js"><link rel="prefetch" href="/assets/js/35.ba4a4fa6.js"><link rel="prefetch" href="/assets/js/36.421a2691.js"><link rel="prefetch" href="/assets/js/37.98b38732.js"><link rel="prefetch" href="/assets/js/38.b03b4971.js"><link rel="prefetch" href="/assets/js/4.42d87f0c.js"><link rel="prefetch" href="/assets/js/40.d7d0f6b9.js"><link rel="prefetch" href="/assets/js/41.123c4869.js"><link rel="prefetch" href="/assets/js/42.f13145bc.js"><link rel="prefetch" href="/assets/js/43.26057f2b.js"><link rel="prefetch" href="/assets/js/44.881863ea.js"><link rel="prefetch" href="/assets/js/45.8579ff06.js"><link rel="prefetch" href="/assets/js/46.eec9abb3.js"><link rel="prefetch" href="/assets/js/47.87a90d33.js"><link rel="prefetch" href="/assets/js/48.96fcdc87.js"><link rel="prefetch" href="/assets/js/49.df4f628b.js"><link rel="prefetch" href="/assets/js/5.22aa753a.js"><link rel="prefetch" href="/assets/js/50.2506cdea.js"><link rel="prefetch" href="/assets/js/51.b3531b7b.js"><link rel="prefetch" href="/assets/js/52.0b0a1092.js"><link rel="prefetch" href="/assets/js/53.fa43d293.js"><link rel="prefetch" href="/assets/js/54.0bdaa375.js"><link rel="prefetch" href="/assets/js/55.fe4d0a9d.js"><link rel="prefetch" href="/assets/js/56.b13f50fb.js"><link rel="prefetch" href="/assets/js/57.32b474ed.js"><link rel="prefetch" href="/assets/js/58.86a687f1.js"><link rel="prefetch" href="/assets/js/59.eb33e458.js"><link rel="prefetch" href="/assets/js/6.96b06b74.js"><link rel="prefetch" href="/assets/js/60.7bfe3b31.js"><link rel="prefetch" href="/assets/js/61.22567d5c.js"><link rel="prefetch" href="/assets/js/62.8ac118a1.js"><link rel="prefetch" href="/assets/js/63.85a143c6.js"><link rel="prefetch" href="/assets/js/64.3057ba7a.js"><link rel="prefetch" href="/assets/js/65.e892e9d7.js"><link rel="prefetch" href="/assets/js/66.e5779a2a.js"><link rel="prefetch" href="/assets/js/67.5596e1db.js"><link rel="prefetch" href="/assets/js/68.344c8c37.js"><link rel="prefetch" href="/assets/js/69.49afd026.js"><link rel="prefetch" href="/assets/js/7.e1cb412f.js"><link rel="prefetch" href="/assets/js/8.30a3318e.js"><link rel="prefetch" href="/assets/js/9.f8e7dd6d.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.f2336eae.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.b569aa3e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://resource.gocloudcoder.com/logo.jpeg" alt="gopher-road" class="logo"> <span class="site-name can-hide">gopher-road</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/golang/" class="nav-link router-link-active">
+  golang
+</a></div><div class="nav-item"><a href="/linux/" class="nav-link">
+  linux
+</a></div><div class="nav-item"><a href="/algorithms/" class="nav-link">
+  算法与数据结构
+</a></div><div class="nav-item"><a href="/codeManage/" class="nav-link">
+  代码管理
+</a></div><div class="nav-item"><a href="/middleware/" class="nav-link">
+  中间件
+</a></div><div class="nav-item"><a href="/docker/" class="nav-link">
+  docker
+</a></div><div class="nav-item"><a href="/kubernetes/" class="nav-link">
+  kubernetes
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目实战
+</a></div><div class="nav-item"><a href="/recommendation/" class="nav-link">
+  推荐阅读
+</a></div><div class="nav-item"><a href="https://github.com/jaronnie/gopher-road" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>标准库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/golang/standard-library/time.html" class="sidebar-link">Go time 时间处理</a></li><li><a href="/golang/standard-library/os.html" class="sidebar-link">Go os 系统信息</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>第三方库</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>范型学习</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="mapreduce"><a href="#mapreduce" class="header-anchor">#</a> mapreduce</h1> <h2 id="代码实例"><a href="#代码实例" class="header-anchor">#</a> 代码实例</h2> <ul><li><a href="https://github.com/jaronnie/gopher-road/tree/main/code/golang/third-party-library/mapreduce" target="_blank" rel="noopener noreferrer">mapreduce<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/jaronnie/gopher-road/edit/main/docs/golang/third-party-library/mapreduce.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/13/2023, 7:13:55 AM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.5b07d533.js" defer></script><script src="/assets/js/3.241cbfc2.js" defer></script><script src="/assets/js/39.61837bcc.js" defer></script>
+  </body>
+</html>

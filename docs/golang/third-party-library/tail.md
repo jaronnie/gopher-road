@@ -67,7 +67,7 @@ go get github.com/hpcloud/tail/...
 
 ## 代码示例
 
-* [tail](code/golang/third-party-library/tail)
+* [tail](https://github.com/jaronnie/gopher-road/tree/main/code/golang/third-party-library/tail)
 
 ## 参考文档
 

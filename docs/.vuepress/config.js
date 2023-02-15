@@ -72,6 +72,7 @@ module.exports = {
               { title: 'Go 常用正则表达式 commonregex', path: '/golang/third-party-library/commonregex' },
               { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/third-party-library/tail' },
               { title: 'Go 使用 viper 最佳实践', path: '/golang/third-party-library/viper' },
+              { title: 'Go 爬虫库 colly', path: '/golang/third-party-library/colly' },
             ]
           },
           {
@@ -134,6 +135,7 @@ module.exports = {
            'git-use',
            'jenkins-go',
            'git-lfs',
+           'github-action',
          ],
          '/middleware/': [
           {

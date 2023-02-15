@@ -2,4 +2,4 @@
 
 ## 代码示例
 
-* [tail](https://github.com/jaronnie/gopher-road/tree/main/code/golang/third-party-library/colly)
+* [colly](https://github.com/jaronnie/gopher-road/tree/main/code/golang/third-party-library/colly)

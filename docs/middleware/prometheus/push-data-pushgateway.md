@@ -36,4 +36,4 @@ func main() {
 
 ### 代码示例
 
-* [push-data-pushgateway](https://github.com/jaronnie/gopher-road/tree/main/code/middleware/prometheus/push-data-pushdateway)
+* [push-data-pushgateway](https://github.com/jaronnie/gopher-road/tree/main/code/middleware/prometheus/push-data-pushgateway)

@@ -73,6 +73,7 @@ module.exports = {
               { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/third-party-library/tail' },
               { title: 'Go 使用 viper 最佳实践', path: '/golang/third-party-library/viper' },
               { title: 'Go 爬虫库 colly', path: '/golang/third-party-library/colly' },
+              { title: 'cobra 终极指南', path: '/golang/third-party-library/cobra' },
             ]
           },
           {
@@ -124,7 +125,8 @@ module.exports = {
            'grep-sed-awk',
            'compress-decompress',
            'copy-compare-cut',
-           'ssh-free-password'
+           'ssh-free-password',
+           'linux-firewall'
          ],
          '/algorithms/': [
            'kahan-summation',
@@ -152,6 +154,13 @@ module.exports = {
               { title: 'rabbitmq 入门使用', path: '/middleware/rabbitmq/start' },
             ]
           },
+         {
+             title: 'prometheus',
+             collapsable: true,
+             children: [
+                 { title: '将推送数据到 pushgateway', path: '/middleware/prometheus/push-data-pushgateway' },
+             ]
+         },
         ],
          '/docker/': [
           'what-is-docker',

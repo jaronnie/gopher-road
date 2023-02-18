@@ -30,9 +30,9 @@ the road to go!
 
 {{ if gt (len .SubModuleContents) 1}}{{range $k, $v := .SubModuleContents}}## {{$k}}
 
-{{range $kk, $vv := .}}* [{{getTitle $vv}}]({{$vv}})
+{{range $kk, $vv := .}}* [{{getTitle $.ModuleName $vv}}]({{$vv}})
 {{end}}
-{{end}}{{else}}{{range $k, $v := .SubModuleContents}}{{range $kk, $vv := .}}* [{{getTitle $vv}}]({{$vv}})
+{{end}}{{else}}{{range $k, $v := .SubModuleContents}}{{range $kk, $vv := .}}* [{{getTitle $.ModuleName $vv}}]({{$vv}})
 {{end}}
 {{end}}{{end}}`
 )
@@ -98,14 +98,14 @@ func main() {
 
 					for _, vvv := range readSubDir {
 						if strings.HasSuffix(vvv.Name(), "md") {
-							subContents = append(subContents, filepath.Join("docs", v.Name(), vv.Name(), vvv.Name()))
+							subContents = append(subContents, filepath.Join(vv.Name(), vvv.Name()))
 						}
 					}
 					subModuleContent[vv.Name()] = subContents
 					module.SubModuleContents = subModuleContent
 				} else {
 					// module 为单层结构
-					contents = append(contents, filepath.Join("docs", v.Name(), vv.Name()))
+					contents = append(contents, filepath.Join(vv.Name()))
 					module.SubModuleContents = subModuleContent
 					subModuleContent[v.Name()] = contents
 				}

@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"github.com/Masterminds/sprig/v3"
 	"os"
+	"path/filepath"
 	"text/template"
 )
 
@@ -37,8 +38,8 @@ var registerFuncMap = map[string]interface{}{
 	"getTitle": getTitle,
 }
 
-func getTitle(path string) string {
-	open, err := os.Open(path)
+func getTitle(moduleName, path string) string {
+	open, err := os.Open(filepath.Join("docs", moduleName, path))
 	if err != nil {
 		return ""
 	}

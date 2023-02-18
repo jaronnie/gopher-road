@@ -20,7 +20,7 @@
 
 # ag更好用的一个点
 
-![image-20210319213522134](http://resource.gocloudcoder.com/image-20210319213522134.png)
+![image-20210319213522134](http://oss.jaronnie.com/image-20210319213522134.png)
 
 这是一本讲解Go语言的开源书籍，假如我要在以上所有文件中找到关于锁的知识，该怎么办？
 
@@ -30,7 +30,7 @@
 grep "锁" * # *表示该目录下所有的文件
 ```
 
-![image-20210319213747595](http://resource.gocloudcoder.com/image-20210319213747595.png)
+![image-20210319213747595](http://oss.jaronnie.com/image-20210319213747595.png)
 
 缺陷是不会遍历利该目录下的子目录。
 
@@ -53,7 +53,7 @@ ag "锁"
 
 使用起来更简单，并且会递归遍历子目录进行查找
 
-![image-20210319214214841](http://resource.gocloudcoder.com/image-20210319214214841.png)
+![image-20210319214214841](http://oss.jaronnie.com/image-20210319214214841.png)
 
 ## 测试一下两者谁更高效
 
@@ -66,7 +66,7 @@ touch {1..100000}.txt
 echo "99999" > 99999.txt
 ```
 
-![image-20210319224717759](http://resource.gocloudcoder.com/image-20210319224717759.png)
+![image-20210319224717759](http://oss.jaronnie.com/image-20210319224717759.png)
 
 我们的任务就是找出哪个文件中存在99999这个数
 
@@ -78,7 +78,7 @@ grep "99999" *
 
 我的电脑上测试需要10s
 
-<img src="http://resource.gocloudcoder.com/image-20210319224901215.png" alt="image-20210319224901215" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210319224901215.png" alt="image-20210319224901215" style="zoom:150%;" />
 
 【ag】
 
@@ -90,7 +90,7 @@ ag "99999"
 
 并且还给出了所在文件的第几行
 
-<img src="http://resource.gocloudcoder.com/image-20210319224936632.png" alt="image-20210319224936632" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210319224936632.png" alt="image-20210319224936632" style="zoom:150%;" />
 
 【总结】
 

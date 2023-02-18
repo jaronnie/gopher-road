@@ -33,7 +33,7 @@ go get github.com/360EntSecGroup-Skylar/excelize/v2
 * sheet，默认是 sheet1
 * 坐标
 
-<img src="http://resource.gocloudcoder.com/image-20210422133727910.png" alt="image-20210422133727910" style="zoom:80%;" />
+<img src="http://oss.jaronnie.com/image-20210422133727910.png" alt="image-20210422133727910" style="zoom:80%;" />
 
 写入到excel
 
@@ -165,7 +165,7 @@ func main() {
 }
 ```
 
-![image-20210422141005980](http://resource.gocloudcoder.com/image-20210422141005980.png)
+![image-20210422141005980](http://oss.jaronnie.com/image-20210422141005980.png)
 
 ### 向 excel 中添加图片
 
@@ -198,7 +198,7 @@ func main() {
 }
 ```
 
-![image-20210422141634536](http://resource.gocloudcoder.com/image-20210422141634536.png)
+![image-20210422141634536](http://oss.jaronnie.com/image-20210422141634536.png)
 
 ## 参考资料
 

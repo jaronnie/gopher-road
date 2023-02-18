@@ -46,13 +46,13 @@ v1表示标签,如果没有指定,则为latest。
 docker build -t="gocloudcoder/test1:v1" .
 ```
 
-<img src="http://resource.gocloudcoder.com/image-20210322150510611.png" alt="image-20210322150510611" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210322150510611.png" alt="image-20210322150510611" style="zoom:150%;" />
 
 使用docker images命令即可看到构建好的镜像
 
 我们使用docker run命令运行这个镜像
 
-<img src="http://resource.gocloudcoder.com/image-20210322150627575.png" alt="image-20210322150627575" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210322150627575.png" alt="image-20210322150627575" style="zoom:150%;" />
 
 上面提到我们可以在docker run命令中覆盖Dockerfile中的CMD指令
 
@@ -60,7 +60,7 @@ docker build -t="gocloudcoder/test1:v1" .
 docker run gocloudcoder/test:v1 ls -l
 ```
 
-![image-20210322151342346](http://resource.gocloudcoder.com/image-20210322151342346.png)
+![image-20210322151342346](http://oss.jaronnie.com/image-20210322151342346.png)
 
 > **注意**:在Dockerfile中只能指定一条CMD指令。如果指定了多条,只有最后一条生效。如果想在容器启动时运行多个进程或者多条命令,可以考虑使用Supervistor等服务管理工具。
 
@@ -81,17 +81,17 @@ ENTRYPOINT指令提供的命令则不容易在启动容器时被覆盖。实际�
 docker build -t="gocloudcoder/test1:v2" .
 ```
 
-![image-20210322195916619](http://resource.gocloudcoder.com/image-20210322195916619.png)
+![image-20210322195916619](http://oss.jaronnie.com/image-20210322195916619.png)
 
 接下来我们指定一个-l选项,那么实际运行的就是 ls -l
 
-![image-20210322200015865](http://resource.gocloudcoder.com/image-20210322200015865.png)
+![image-20210322200015865](http://oss.jaronnie.com/image-20210322200015865.png)
 
 如果我们在Dockerfile中指定ENTRYPOINT中指定ls的参数,在docker run的时候再指定一下参数会如何呢？
 
 Dockerfile中的ENTRYPOINT中的参数一定会执行,docker run中指定的参数也会执行。
 
-![image-20210322213959242](http://resource.gocloudcoder.com/image-20210322213959242.png)
+![image-20210322213959242](http://oss.jaronnie.com/image-20210322213959242.png)
 
 我们可以组合使用ENTRYPOINT和CMD指令来完成一些巧妙的工作
 
@@ -111,9 +111,9 @@ Dockerfile中的ENTRYPOINT中的参数一定会执行,docker run中指定的参�
 
 -l参数可以更换成-a等参数
 
-![image-20210322214553320](http://resource.gocloudcoder.com/image-20210322214553320.png)
+![image-20210322214553320](http://oss.jaronnie.com/image-20210322214553320.png)
 
-![image-20210322214609541](http://resource.gocloudcoder.com/image-20210322214609541.png)
+![image-20210322214609541](http://oss.jaronnie.com/image-20210322214609541.png)
 
 这个搭配起来非常的巧妙啊！
 
@@ -137,11 +137,11 @@ WORKDIR指令用来在从镜像创建一个新容器时,在容器内部设置一
  docker build -t="gocloudcoder/test1:v5" .
 ```
 
-![image-20210322215649494](http://resource.gocloudcoder.com/image-20210322215649494.png)
+![image-20210322215649494](http://oss.jaronnie.com/image-20210322215649494.png)
 
 使用-w参数覆盖WORKDIR
 
-![image-20210322215751656](http://resource.gocloudcoder.com/image-20210322215751656.png)
+![image-20210322215751656](http://oss.jaronnie.com/image-20210322215751656.png)
 
 【ENV】
 
@@ -153,7 +153,7 @@ ENV GOROOT /usr/local/bin/go
 WORKDIR $GOROOT
 ```
 
-![image-20210323111357270](http://resource.gocloudcoder.com/image-20210323111357270.png)
+![image-20210323111357270](http://oss.jaronnie.com/image-20210323111357270.png)
 
 这些环境变量会持久保存到从我们的镜像创建的任何容器中。
 
@@ -163,7 +163,7 @@ WORKDIR $GOROOT
 docker run -e "GOROOT=/usr/loca/bin/go2" gocloudcoder/test1:v6 env
 ```
 
-![image-20210323112127294](http://resource.gocloudcoder.com/image-20210323112127294.png)
+![image-20210323112127294](http://oss.jaronnie.com/image-20210323112127294.png)
 
 【USER】
 

@@ -138,7 +138,7 @@ docker run -d --restart=always --name myrabbitmq -p 5672:5672  rabbitmq
 # rabbitmq 使用官方镜像rabbitmq
 ```
 
-![image-20210310193558444](http://resource.gocloudcoder.com/image-20210310193558444.png)
+![image-20210310193558444](http://oss.jaronnie.com/image-20210310193558444.png)
 
 接下来我们安装golang rabbitmq客户端 amqp
 
@@ -205,7 +205,7 @@ func failOnError(err error, msg string) {
 
 使用docker logs -f myrabbitmq就可以查看
 
-![image-20210310195251559](http://resource.gocloudcoder.com/image-20210310195251559.png)
+![image-20210310195251559](http://oss.jaronnie.com/image-20210310195251559.png)
 
 每运行一次，将建立连接，然后运行完毕连接断开。
 
@@ -270,7 +270,7 @@ func failOnError(err error, msg string) {
 
 或者我们先运行发送消息，再运行接收消息，依然可以正常接收到消息。邮箱的机制保证了消息传递的可靠性。
 
-![image-20210310202348798](http://resource.gocloudcoder.com/image-20210310202348798.png)
+![image-20210310202348798](http://oss.jaronnie.com/image-20210310202348798.png)
 
 ### rabbit mq重大意义
 

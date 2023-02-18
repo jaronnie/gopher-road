@@ -56,7 +56,7 @@ git push -u origin master
 
 此时，可以在 github 上看到如下内容：
 
-![](https://resource.gocloudcoder.com/image-20210822135145682.png)
+![](https://oss.jaronnie.com/image-20210822135145682.png)
 
 ## 版本管理
 
@@ -91,11 +91,11 @@ func main() {
 go get github.com/jaronnie/tourmod
 ```
 
-![](https://resource.gocloudcoder.com/image-20210822135941366.png)
+![](https://oss.jaronnie.com/image-20210822135941366.png)
 
 此时查看 go.mod 文件的内容.
 
-![](https://resource.gocloudcoder.com/image-20210822140432205.png)
+![](https://oss.jaronnie.com/image-20210822140432205.png)
 
 由于我们没有指定版本，而且我们的仓库中没有打 tag，所以 go module 按照自己的内部规则进行拉取。其中 v0.0.0 是版本信息，一串数字是拉取版本的 commit 时间，后面的字符串为所拉取版本的 commit 哈希值。
 
@@ -127,15 +127,15 @@ git push -u origin master
 
 可以看到：
 
-![](https://resource.gocloudcoder.com/image-20210822141300914.png)
+![](https://oss.jaronnie.com/image-20210822141300914.png)
 
 下面我们为此次提交的代码打一个 tag：
 
 点击 create a new release.
 
-![](https://resource.gocloudcoder.com/image-20210822141521858.png)
+![](https://oss.jaronnie.com/image-20210822141521858.png)
 
-![](https://resource.gocloudcoder.com/image-20210822141546091.png)
+![](https://oss.jaronnie.com/image-20210822141546091.png)
 
 v1.0.0 发布成功，下面我们进入我们写项目目录：
 
@@ -144,11 +144,11 @@ cd mytour
 go get github.com/jaronnie/tourmod@v1.0.0
 ```
 
-![](https://resource.gocloudcoder.com/image-20210822142117320.png)
+![](https://oss.jaronnie.com/image-20210822142117320.png)
 
 可以看到，版本替换成功。此时运行 `go run main.go`
 
-![](https://resource.gocloudcoder.com/image-20210822142213472.png)
+![](https://oss.jaronnie.com/image-20210822142213472.png)
 
 现在由于某种原因，我们对 package 进行了一个重大的重构，版本从 v1 上升到 v2.
 
@@ -184,9 +184,9 @@ git push -u origin master
 
 再来打一个 tag：
 
-![](https://resource.gocloudcoder.com/image-20210822142938912.png)
+![](https://oss.jaronnie.com/image-20210822142938912.png)
 
-![](https://resource.gocloudcoder.com/image-20210822143102782.png)
+![](https://oss.jaronnie.com/image-20210822143102782.png)
 
 再进入我们的 mytour 项目
 

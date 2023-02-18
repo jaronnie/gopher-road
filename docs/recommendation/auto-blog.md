@@ -14,15 +14,15 @@
 
 图床服务，当然不仅仅限于图片，包括音频，视频等。
 
-![image-20220826102654545](https://resource.gocloudcoder.com/image-20220826102654545.png)
+![image-20220826102654545](https://oss.jaronnie.com/image-20220826102654545.png)
 
-![image-20220826102630753](https://resource.gocloudcoder.com/image-20220826102630753.png)
+![image-20220826102630753](https://oss.jaronnie.com/image-20220826102630753.png)
 
 ### asciinema--终端录屏
 
 > 链接：[终端录屏配置](https://blog.jaronnie.com/linux%e7%bb%88%e7%ab%af%e5%bd%95%e5%b1%8f%e5%b7%a5%e5%85%b7asciinema%e5%b9%b6%e8%bd%ac%e4%b8%bagif/)
 
-![2022-08-26_10-28-40](https://resource.gocloudcoder.com/2022-08-26_10-28-40.gif)
+![2022-08-26_10-28-40](https://oss.jaronnie.com/2022-08-26_10-28-40.gif)
 
 ### markdown 中插入视频
 
@@ -34,7 +34,7 @@
 
 使用 qn 小工具上传到七牛图床服务中
 
-![image-20220826105412579](https://resource.gocloudcoder.com/image-20220826105412579.png)
+![image-20220826105412579](https://oss.jaronnie.com/image-20220826105412579.png)
 
 修改为如下
 
@@ -42,7 +42,7 @@
 <iframe 
     width="800" 
     height="450" 
-    src="https://resource.gocloudcoder.com/2022.08.26.10.51.31.mp4"
+    src="https://oss.jaronnie.com/2022.08.26.10.51.31.mp4"
     frameborder="0" 
     allowfullscreen>
 </iframe>
@@ -51,7 +51,7 @@
 <iframe 
     width="800" 
     height="450" 
-    src="https://resource.gocloudcoder.com/2022.08.26.10.51.31.mp4"
+    src="https://oss.jaronnie.com/2022.08.26.10.51.31.mp4"
     frameborder="0" 
     allowfullscreen>
 </iframe>
@@ -99,11 +99,11 @@ jobs:
 
 vuepress 模板仓库，一键搭建
 
-![image-20220826102138100](https://resource.gocloudcoder.com/image-20220826102138100.png)
+![image-20220826102138100](https://oss.jaronnie.com/image-20220826102138100.png)
 
 ci/cd 流程
 
-![image-20220826101701376](https://resource.gocloudcoder.com/image-20220826101701376.png)
+![image-20220826101701376](https://oss.jaronnie.com/image-20220826101701376.png)
 
 
 
@@ -115,4 +115,4 @@ ci/cd 流程
 
 使用[在线网站工具](https://doocs.gitee.io/md/)
 
-![image-20220826104354161](https://resource.gocloudcoder.com/image-20220826104354161.png)
+![image-20220826104354161](https://oss.jaronnie.com/image-20220826104354161.png)

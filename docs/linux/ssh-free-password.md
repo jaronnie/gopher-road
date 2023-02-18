@@ -19,4 +19,4 @@ Host ali
     IdentityFile ~/.ssh/id_rsa
 ```
 
-![image-20230103113626023](https://resource.gocloudcoder.com/image-20230103113626023.png)
+![image-20230103113626023](https://oss.jaronnie.com/image-20230103113626023.png)

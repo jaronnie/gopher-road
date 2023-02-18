@@ -38,7 +38,7 @@ Docker是一个能够把开发的应用程序自动部署到容器的开源引�
 
 Docker的特别之处在于它在虚拟化的容器执行环境中增加了一个应用程序部署引擎。该引擎的目标就是提供了一个清量，快速的环境，能够运行开发者的程序，并方便高效的将程序从开发者的电脑部署到测试环境和生产环境。
 
-<img src="http://resource.gocloudcoder.com/image-20210307124226121.png" alt="image-20210307124226121" style="zoom:67%;" />
+<img src="http://oss.jaronnie.com/image-20210307124226121.png" alt="image-20210307124226121" style="zoom:67%;" />
 
 上图为Docker提供的官方镜像，[点击此处查看]( https://hub.docker.com/search?q=&type=image)。
 
@@ -62,7 +62,7 @@ Docker的特别之处在于它在虚拟化的容器执行环境中增加了一�
 docker run hello-world
 ```
 
-![image-20210307125926448](http://resource.gocloudcoder.com/image-20210307125926448.png)
+![image-20210307125926448](http://oss.jaronnie.com/image-20210307125926448.png)
 
 Docker是一个客户-服务器架构的程序。此时我们使用的命令docker就可以认为是一个客户端，`docker run hello-world`，即向docker公司服务端发出请求，并请求到了结果。Docker提供了一个命令行工具docker以及一整套RESTful API。
 

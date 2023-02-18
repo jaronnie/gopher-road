@@ -95,27 +95,27 @@ git push -u origin main
 
 第一步 新建 item
 
-![image-20210119202716239](http://resource.gocloudcoder.com/image-20210119202716239.png)
+![image-20210119202716239](http://oss.jaronnie.com/image-20210119202716239.png)
 
 写入jenkins-go-first，选择 freestyle project 点击确定
 
-![image-20210119202826071](http://resource.gocloudcoder.com/image-20210119202826071.png)
+![image-20210119202826071](http://oss.jaronnie.com/image-20210119202826071.png)
 
 选择源码管理，使用git
 
 填写github账号和密码
 
-![image-20210119203114039](http://resource.gocloudcoder.com/image-20210119203114039.png)
+![image-20210119203114039](http://oss.jaronnie.com/image-20210119203114039.png)
 
 制定分支看你远程仓库的主分支是master还是main
 
 我这里是用main作为主分支，所以制定分支填写*/main
 
-![image-20210119203226354](http://resource.gocloudcoder.com/image-20210119203226354.png)
+![image-20210119203226354](http://oss.jaronnie.com/image-20210119203226354.png)
 
 选择源码管理，增加构建步骤选择执行Shell
 
-![image-20210119203353292](http://resource.gocloudcoder.com/image-20210119203353292.png)
+![image-20210119203353292](http://oss.jaronnie.com/image-20210119203353292.png)
 
 ```bash
 # shell中写入
@@ -124,25 +124,25 @@ BUILD_ID=DONTKILLME
 nohup ./hello &>hello.log &
 ```
 
-![image-20210119203545809](http://resource.gocloudcoder.com/image-20210119203545809.png)
+![image-20210119203545809](http://oss.jaronnie.com/image-20210119203545809.png)
 
 点击保存
 
 立即构建
 
-![image-20210119203642498](http://resource.gocloudcoder.com/image-20210119203642498.png)
+![image-20210119203642498](http://oss.jaronnie.com/image-20210119203642498.png)
 
 点击箭头处
 
-![image-20210119203724869](http://resource.gocloudcoder.com/image-20210119203724869.png)
+![image-20210119203724869](http://oss.jaronnie.com/image-20210119203724869.png)
 
 点击控制台输出
 
-![image-20210119203759284](http://resource.gocloudcoder.com/image-20210119203759284.png)
+![image-20210119203759284](http://oss.jaronnie.com/image-20210119203759284.png)
 
 构建成功
 
-![image-20210119203917582](http://resource.gocloudcoder.com/image-20210119203917582.png)
+![image-20210119203917582](http://oss.jaronnie.com/image-20210119203917582.png)
 
 直接访问
 
@@ -193,7 +193,7 @@ bash ./deploy.sh
 
 http://nj-jay.com:8080/github-webhook/
 
-![](http://resource.gocloudcoder.com/image-20210119234032454.png)
+![](http://oss.jaronnie.com/image-20210119234032454.png)
 
 ### 配置Github项目仓库
 
@@ -203,7 +203,7 @@ settings ->webhooks->Add webhooks
 
 然后Add webhooks即可
 
-![image-20210119234345968](http://resource.gocloudcoder.com/image-20210119234345968.png)
+![image-20210119234345968](http://oss.jaronnie.com/image-20210119234345968.png)
 
 ### 生成Personal access tokens
 
@@ -211,9 +211,9 @@ Jenkins访问GitHub工程的时候，有的操作是需要授权的，所以我�
 
 登录GitHub，进入"Settings"页面，点击左下角的"Developer settings"，如下图：
 
-![image-20210119234542585](http://resource.gocloudcoder.com/image-20210119234542585.png)
+![image-20210119234542585](http://oss.jaronnie.com/image-20210119234542585.png)
 
-![image-20210119234609198](http://resource.gocloudcoder.com/image-20210119234609198.png)
+![image-20210119234609198](http://oss.jaronnie.com/image-20210119234609198.png)
 
 如果怕出问题，所有的选项全部勾选上
 
@@ -226,11 +226,11 @@ GitHub Plugin插件，在"系统管理->管理插件"位置检查此插件是否
 
 弹出的页面中，“Kind"选择"Secret text”，"Secret"填入前面在GitHub上生成的Personal access tokens，Description随便写一些描述信息，如下图：
 
-![image-20210119235016727](http://resource.gocloudcoder.com/image-20210119235016727.png)
+![image-20210119235016727](http://oss.jaronnie.com/image-20210119235016727.png)
 
 填写完毕后，点击右侧的"Test connection"按钮，如果信息没有填错，显示的内容如下图所示：
 
-![image-20210119234942760](http://resource.gocloudcoder.com/image-20210119234942760.png)
+![image-20210119234942760](http://oss.jaronnie.com/image-20210119234942760.png)
 
 最后点击保存即可
 
@@ -238,14 +238,14 @@ GitHub Plugin插件，在"系统管理->管理插件"位置检查此插件是否
 
 在上面的基础上增加几个配置即可
 
-![image-20210119235214118](http://resource.gocloudcoder.com/image-20210119235214118.png)
+![image-20210119235214118](http://oss.jaronnie.com/image-20210119235214118.png)
 
-![image-20210119235229294](http://resource.gocloudcoder.com/image-20210119235229294.png)
+![image-20210119235229294](http://oss.jaronnie.com/image-20210119235229294.png)
 
-![image-20210119235250730](http://resource.gocloudcoder.com/image-20210119235250730.png)
+![image-20210119235250730](http://oss.jaronnie.com/image-20210119235250730.png)
 
 然后再push就会自动的检测。重新编译部署！
 
 有个小坑，由于我的机子有点垃圾，所以push两分钟后才自动检测到，不是配置的原因!
 
-![image-20210120090405451](http://resource.gocloudcoder.com/image-20210120090405451.png)
+![image-20210120090405451](http://oss.jaronnie.com/image-20210120090405451.png)

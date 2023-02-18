@@ -25,7 +25,7 @@ module.exports = {
     docsDir: 'docs',
     editLinks: true, // 底部增加编辑此页
     lastUpdated: 'Last Updated', // 最近更新时间
-    logo: 'https://resource.gocloudcoder.com/logo.jpeg',
+    logo: 'https://oss.jaronnie.com/logo.jpeg',
     locales: {  
       '/': {
        // 多语言下拉菜单的标题
@@ -59,62 +59,48 @@ module.exports = {
             title: '标准库',
             collapsable: true,
             children: [
-              { title: 'Go time 时间处理', path: '/golang/standard-library/time' },
-              { title: 'Go os 系统信息', path: '/golang/standard-library/os' },
+              { title: 'Go time 时间处理', path: '/golang/1-standard-library/time' },
+              { title: 'Go os 系统信息', path: '/golang/1-standard-library/os' },
             ]
           },
           {
             title: '第三方库',
             collapsable: true,
             children: [
-              { title: 'Go 类型转换神器 cast', path: '/golang/third-party-library/cast' },
-              { title: 'Go 操作 excel 利器 excelize', path: '/golang/third-party-library/excelize' },
-              { title: 'Go 常用正则表达式 commonregex', path: '/golang/third-party-library/commonregex' },
-              { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/third-party-library/tail' },
-              { title: 'Go 使用 viper 最佳实践', path: '/golang/third-party-library/viper' },
-              { title: 'Go 爬虫库 colly', path: '/golang/third-party-library/colly' },
-              { title: 'cobra 终极指南', path: '/golang/third-party-library/cobra' },
+              { title: 'Go 类型转换神器 cast', path: '/golang/2-third-party-library/cast' },
+              { title: 'Go 操作 excel 利器 excelize', path: '/golang/2-third-party-library/excelize' },
+              { title: 'Go 常用正则表达式 commonregex', path: '/golang/2-third-party-library/commonregex' },
+              { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/2-third-party-library/tail' },
+              { title: 'Go 使用 viper 最佳实践', path: '/golang/2-third-party-library/viper' },
+              { title: 'Go 爬虫库 colly', path: '/golang/2-third-party-library/colly' },
+              { title: 'cobra 终极指南', path: '/golang/2-third-party-library/cobra' },
             ]
           },
           {
             title: '范型学习',
             collapsable: true,
             children: [
-              { title: '概念介绍', path: '/golang/generic-learn/start' },
-              { title: 'slice 范型使用', path: '/golang/generic-learn/slices' },
+              { title: '概念介绍', path: '/golang/4-generic-learn/start' },
+              { title: 'slice 范型使用', path: '/golang/4-generic-learn/slices' },
             ]
           },
           {
             title: 'web 框架',
             collapsable: true,
             children: [
-              {
-                title: 'Golang 原生 http 框架',
-                collapsable: true,
-                children: [
-              { title: '怎么使用go开启web服务?', path: '/golang/web-frame/net-http/start' },
-              { title: 'go内置包启动一个web服务的流程是什么样的?',path: '/golang/web-frame/net-http/start02' }, 
-              { title: '为什么gin这么快?',path: '/golang/web-frame/net-http/start03'},               
-              { title: '怎么实现自己的web服务?', path: '/golang/web-frame/net-http/start04' }, 
-               ]
-              },
-              {
-                title: 'Golang 轻量级 http 框架 Gin',
-                collapsable: true,
-                children: [
-                  { title: '入门使用', path: '/golang/web-frame/gin/start' },
-                ]
-              },
+              { title: 'http', path: '/golang/3-web-frame/http' },
+              { title: 'implement-http', path: '/golang/3-web-frame/implement-http' },
+              { title: 'gin', path: '/golang/3-web-frame/gin' },
             ]
           },
           {
             title: '其他',
             collapsable: true,
             children: [
-              { title: 'golang 编译成 so 后 C 调用', path: '/golang/others/golang-so-example' },
-              { title: 'golang plugin 示例', path: '/golang/others/golang-plugin-example' },
-              { title: 'golang 文件锁 flock', path: '/golang/others/golang-file-lock' },
-              { title: 'golang plan9 汇编', path: '/golang/others/golang-plan9-example' },
+              { title: 'golang 编译成 so 后 C 调用', path: '/golang/5-others/golang-so-example' },
+              { title: 'golang plugin 示例', path: '/golang/5-others/golang-plugin-example' },
+              { title: 'golang 文件锁 flock', path: '/golang/5-others/golang-file-lock' },
+              { title: 'golang plan9 汇编', path: '/golang/5-others/golang-plan9-example' },
             ]
           },
          ],

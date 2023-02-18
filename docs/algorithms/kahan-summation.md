@@ -51,7 +51,7 @@ func main() {
 }
 ```
 
-<img src="http://resource.gocloudcoder.com/image-20210508113227479.png" alt="image-20210508113227479" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210508113227479.png" alt="image-20210508113227479" style="zoom:150%;" />
 
 结果完全正确，精度没有任何损失。
 
@@ -86,7 +86,7 @@ func main() {
 }
 ```
 
-<img src="http://resource.gocloudcoder.com/image-20210508160545164.png" alt="image-20210508160545164" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210508160545164.png" alt="image-20210508160545164" style="zoom:150%;" />
 
 答案完全正确，是我们想要的结果。
 
@@ -119,7 +119,7 @@ func main() {
 }
 ```
 
-![image-20210508160246405](http://resource.gocloudcoder.com/image-20210508160246405.png)
+![image-20210508160246405](http://oss.jaronnie.com/image-20210508160246405.png)
 
 通过这么几行代码我们就实现了避免精度损失。所以算法还是蛮重要的哦！
 

@@ -1,29 +1,39 @@
-# Golang
+# golang
 
-![](https://resource.gocloudcoder.com/fiveyears.jpeg)
+![](https://oss.jaronnie.com/gopher-road-golang.png)
 
-## 标准库
+## 1-standard-library
 
-* [Go 时间处理库](./standard-library/time.md)
-* [Go 获取操作系统信息](./standard-library/os.md)
+* [os 包](docs/golang/1-standard-library/os.md)
+* [time 包](docs/golang/1-standard-library/time.md)
 
-## 第三方库
+## 2-third-party-library
 
-* [Go 类型转换神器 cast](./third-party-library/cast.md) 
-* [Go 操作 excel 利器 execlize](./third-party-library/excelize.md)
-* [Go 常用正则表达式库 commonregex](./third-party-library/commonregex.md)
-* [Go 对标 linux tail 命令的库 tail](./third-party-library/tail.md)
+* [Go 类型转换神器 cast](docs/golang/2-third-party-library/cast.md)
+* [cobra 指南](docs/golang/2-third-party-library/cobra.md)
+* [golang 爬虫库 colly](docs/golang/2-third-party-library/colly.md)
+* [为什么使用 commonregex?](docs/golang/2-third-party-library/commonregex.md)
+* [Go 操作 excel 利器 excelize](docs/golang/2-third-party-library/excelize.md)
+* [mapreduce](docs/golang/2-third-party-library/mapreduce.md)
+* [对标 linux tail 命令的 Golang tail 包](docs/golang/2-third-party-library/tail.md)
+* [一个好的配置系统是什么样的？](docs/golang/2-third-party-library/viper.md)
 
-## web 框架
+## 3-web-frame
 
-* Go 原生框架 http
-    * [入门使用](./web-frame/net-http/start.md)
-* Go 轻量级 http 框架 gin
-    * [入门使用](./web-frame/gin/start.md) 
+* [gin](docs/golang/3-web-frame/gin.md)
+* [net/http](docs/golang/3-web-frame/http.md)
+* [implement http](docs/golang/3-web-frame/implement-http.md)
 
-## 泛型学习
-* [入门概念介绍](./generic-learn/start.md)
-* [slice泛型使用](./generic-learn/slices.md)
+## 4-generic-learn
 
-## 其他
-* [golang 编译成 so 后 C 调用](./others/golang-so-example.md)    
+* [slice 范型](docs/golang/4-generic-learn/slices.md)
+* [新概念](docs/golang/4-generic-learn/start.md)
+
+## 5-others
+
+* [golang-file-lock](docs/golang/5-others/golang-file-lock.md)
+* [golang-plan9-example](docs/golang/5-others/golang-plan9-example.md)
+* [golang plugin example](docs/golang/5-others/golang-plugin-example.md)
+* [golang-so-example](docs/golang/5-others/golang-so-example.md)
+* [graphql-quick-start](docs/golang/5-others/graphql-quick-start.md)
+

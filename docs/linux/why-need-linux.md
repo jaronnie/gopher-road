@@ -46,7 +46,7 @@
 
 你会发现开始的时候是这样的
 
-![](https://resource.gocloudcoder.com/3.22.12.31.png)
+![](https://oss.jaronnie.com/3.22.12.31.png)
 
 也仅仅会用
 
@@ -76,7 +76,7 @@ cd ls mv rm vim cp 等命令
 
 于是,稍微美化了一下(MAC 主题优化)
 
-![](https://resource.gocloudcoder.com/3.22.13.02.png)
+![](https://oss.jaronnie.com/3.22.13.02.png)
 
 此时，你会更加喜欢上 linux
 
@@ -118,9 +118,9 @@ cd ls mv rm vim cp 等命令
 
 推荐一本英文书籍
 
-[下载链接](https://resource.gocloudcoder.com/%28by-William-E.-Shotts%29-The-Linux-Command-Line-A-C-3704056-%28z-lib.org%29.pdf)
+[下载链接](https://oss.jaronnie.com/%28by-William-E.-Shotts%29-The-Linux-Command-Line-A-C-3704056-%28z-lib.org%29.pdf)
 
-<img src="https://resource.gocloudcoder.com/3.22.13.07.png" style="zoom:67%;" />
+<img src="https://oss.jaronnie.com/3.22.13.07.png" style="zoom:67%;" />
 
 不是特别建议新手看鸟哥的linux私房菜
 
@@ -159,13 +159,13 @@ cd ls mv rm vim cp 等命令
 
 将相关的文件运行并用别名表示
 
-![](https://resource.gocloudcoder.com/tty.gif)
+![](https://oss.jaronnie.com/tty.gif)
 
 以及unix设计哲学：环境变量
 
 可执行程序放在某些文件夹下会被shell自动检索
 
-​![](https://resource.gocloudcoder.com/test2.gif)
+​![](https://oss.jaronnie.com/test2.gif)
 
 
 
@@ -192,7 +192,7 @@ cd ls mv rm vim cp 等命令
 
 运行一个app等
 
-![](https://resource.gocloudcoder.com/test3.gif)
+![](https://oss.jaronnie.com/test3.gif)
 
 当然 remote 是我用了 alias 简写后的命令
 
@@ -200,13 +200,13 @@ cd ls mv rm vim cp 等命令
 
 搭建博客网上有很多教程
 
-![](https://resource.gocloudcoder.com/3.22.15.29.png)
+![](https://oss.jaronnie.com/3.22.15.29.png)
 
 ## 高阶linux
 
 推荐
 
-<img src="https://resource.gocloudcoder.com/3.22.16.08.png" style="zoom: 67%;" />
+<img src="https://oss.jaronnie.com/3.22.16.08.png" style="zoom: 67%;" />
 
 全书介绍脚本的书写
 
@@ -224,7 +224,7 @@ cd ls mv rm vim cp 等命令
 * 编译自己写的c程序生成二进制可执行文件(放进可检索的文件夹，重复利用)
 * python + shell 脚本　无敌！
 
-![](https://resource.gocloudcoder.com/test5.gif)
+![](https://oss.jaronnie.com/test5.gif)
 
 ## 那对于程序员来说为什么要费这么大力气学这些东西呢？
 
@@ -234,7 +234,7 @@ cd ls mv rm vim cp 等命令
 
 而linux(配置后的vim+tmux分屏后的效果)
 
-![](https://resource.gocloudcoder.com/test4.gif)
+![](https://oss.jaronnie.com/test4.gif)
 
 linux配置各种环境很方便
 
@@ -245,7 +245,7 @@ linux配置各种环境很方便
 * tensorflow / pytorch / caffe
 * 配置适合自己的vim编辑器(其他编辑器基本可以不需要使用了)
 
-![](https://resource.gocloudcoder.com/3.22.20.28.png)
+![](https://oss.jaronnie.com/3.22.20.28.png)
 
 **见过太多使用windows的，老是出各种各样的问题**
 

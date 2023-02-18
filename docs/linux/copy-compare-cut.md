@@ -29,7 +29,7 @@
 stat hello.txt
 ```
 
-![image-20210112111158651](http://resource.gocloudcoder.com/image-20210112111158651.png)
+![image-20210112111158651](http://oss.jaronnie.com/image-20210112111158651.png)
 
 核心信息
 
@@ -45,7 +45,7 @@ stat hello.txt
 ls -i [filename]
 ```
 
-![image-20210112111908034](http://resource.gocloudcoder.com/image-20210112111908034.png)
+![image-20210112111908034](http://oss.jaronnie.com/image-20210112111908034.png)
 
 可以看到 hello.txt 是 1056459，world.txt inode 是 1056554.
 
@@ -67,7 +67,7 @@ ls -i [filename]
 >
 > 剪切和复制的文件放在 dest 文件夹中
 
-![image-20210112112938569](http://resource.gocloudcoder.com/image-20210112112938569.png)
+![image-20210112112938569](http://oss.jaronnie.com/image-20210112112938569.png)
 
 | 文件名    | inode   |
 | --------- | ------- |
@@ -76,11 +76,11 @@ ls -i [filename]
 
 **对hello.txt进行复制操作**
 
-![image-20210112121144328](http://resource.gocloudcoder.com/image-20210112121144328.png)
+![image-20210112121144328](http://oss.jaronnie.com/image-20210112121144328.png)
 
 **对world.txt进行剪切操作**
 
-![image-20210112121301169](http://resource.gocloudcoder.com/image-20210112121301169.png)
+![image-20210112121301169](http://oss.jaronnie.com/image-20210112121301169.png)
 
 操作之后的 inode
 

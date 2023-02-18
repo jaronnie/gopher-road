@@ -48,7 +48,7 @@ Docker将这样的文件系统称为镜像。一个镜像可以放到另一个�
 docker login
 ```
 
-![image-20210320212442286](http://resource.gocloudcoder.com/image-20210320212442286.png)
+![image-20210320212442286](http://oss.jaronnie.com/image-20210320212442286.png)
 
 ### 构建镜像
 
@@ -73,7 +73,7 @@ docker run -i -t -d --restart=always --name=myubuntu ubuntu
  docker exec -i -t myubuntu bash
 ```
 
-![image-20210320215057180](http://resource.gocloudcoder.com/image-20210320215057180.png)
+![image-20210320215057180](http://oss.jaronnie.com/image-20210320215057180.png)
 
 ```shell
 apt update

@@ -24,11 +24,11 @@ kubectl apply -f deploy-service.yaml
 
 **docker images(运行服务的宿主机)**
 
-![image-20211119013519266](https://resource.gocloudcoder.com/image-20211119013519266.png)
+![image-20211119013519266](https://oss.jaronnie.com/image-20211119013519266.png)
 
 **docker ps | grep kube-image-pull**
 
-![image-20211119013620285](https://resource.gocloudcoder.com/image-20211119013620285.png)
+![image-20211119013620285](https://oss.jaronnie.com/image-20211119013620285.png)
 
 重新修改镜像，上传到 dockhub
 
@@ -47,7 +47,7 @@ kubectl apply -f deploy-service-change.yaml
 
 **docker images(运行服务的宿主机)**
 
-![image-20211119014513818](https://resource.gocloudcoder.com/image-20211119014513818.png)
+![image-20211119014513818](https://oss.jaronnie.com/image-20211119014513818.png)
 
 发现端倪了吧
 
@@ -59,9 +59,9 @@ kubectl apply -f deploy-service-change.yaml
 
 首先看我们的服务
 
-![image-20211119105503742](https://resource.gocloudcoder.com/image-20211119105503742.png)
+![image-20211119105503742](https://oss.jaronnie.com/image-20211119105503742.png)
 
-![image-20211119105540765](https://resource.gocloudcoder.com/image-20211119105540765.png)
+![image-20211119105540765](https://oss.jaronnie.com/image-20211119105540765.png)
 
 如果我们删掉第一个 deplpyment 的副本，让他重新起一个，那再 curl 服务的时候，是 Hello World 还是 Hello World1 呢？
 
@@ -71,9 +71,9 @@ kubectl delete pod backend-5c988f5d4b-6jmw9
 
 可以看到又起了一个新的 pod
 
-![image-20211119105813194](https://resource.gocloudcoder.com/image-20211119105813194.png)
+![image-20211119105813194](https://oss.jaronnie.com/image-20211119105813194.png)
 
 再次 curl 该服务，果然变成了 Hello World1
 
-![image-20211119105908374](https://resource.gocloudcoder.com/image-20211119105908374.png)
+![image-20211119105908374](https://oss.jaronnie.com/image-20211119105908374.png)
 

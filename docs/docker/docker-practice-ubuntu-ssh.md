@@ -13,7 +13,7 @@ docker pull ubuntu:latest
 # latest为版本号，latest为最新版，也可将latest换成18.04 20.04等
 ```
 
-![image-20210311235804784](http://resource.gocloudcoder.com/image-20210311235804784.png)
+![image-20210311235804784](http://oss.jaronnie.com/image-20210311235804784.png)
 
 ## 创建容器并后台运行，映射端口1234
 
@@ -23,7 +23,7 @@ docker run -i -t -d --restart=always --name=myubuntu -p 1234:22 ubuntu
 
 即后台运行一个有交互的tty终端，这样我们登录进去之后直接进入终端。
 
-![image-20210312130710318](http://resource.gocloudcoder.com/image-20210312130710318.png)
+![image-20210312130710318](http://oss.jaronnie.com/image-20210312130710318.png)
 
 ## 进入容器，下载ssh
 
@@ -50,4 +50,4 @@ service ssh restart # 重启ssh服务
 ssh -p 1234 root@localhost
 ```
 
-![image-20210312132108337](http://resource.gocloudcoder.com/image-20210312132108337.png)
+![image-20210312132108337](http://oss.jaronnie.com/image-20210312132108337.png)

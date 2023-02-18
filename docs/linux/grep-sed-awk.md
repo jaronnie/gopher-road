@@ -12,11 +12,11 @@
 
 将会打印包含`root`的所有行
 
-![2021-03-17_21-55-01](http://resource.gocloudcoder.com/2021-03-17_21-55-01.gif)
+![2021-03-17_21-55-01](http://oss.jaronnie.com/2021-03-17_21-55-01.gif)
 
 当然grep同样支持正则表达式
 
-![2021-03-17_22-02-46](http://resource.gocloudcoder.com/2021-03-17_22-02-46.gif)
+![2021-03-17_22-02-46](http://oss.jaronnie.com/2021-03-17_22-02-46.gif)
 
 ## 初探 sed
 
@@ -26,13 +26,13 @@ sed可以在不打开文件的情况下编辑文件
 
 可以使用 `sed -i 's/hello/world/g' hello.txt` 完成
 
-![2021-03-17_22-07-37](http://resource.gocloudcoder.com/2021-03-17_22-07-37.gif)
+![2021-03-17_22-07-37](http://oss.jaronnie.com/2021-03-17_22-07-37.gif)
 
 ## 初探 awk
 
 可以提取我们需要的特定列的内容
 
-![2021-03-17_22-12-37](http://resource.gocloudcoder.com/2021-03-17_22-12-37.gif)
+![2021-03-17_22-12-37](http://oss.jaronnie.com/2021-03-17_22-12-37.gif)
 
 当然以上都是最最简单的用法
 

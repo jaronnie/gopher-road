@@ -6,12 +6,12 @@
 du -h --max-depth=0 dirname
 ```
 
-<img src="http://resource.gocloudcoder.com/image-20210322131016674.png" alt="image-20210322131016674" style="zoom:200%;" />
+<img src="http://oss.jaronnie.com/image-20210322131016674.png" alt="image-20210322131016674" style="zoom:200%;" />
 
 
 为1则递归一层子目录
 ```shell
 du -h --max-depth=1 dirname
 ```
-<img src="http://resource.gocloudcoder.com/image-20210322131053215.png" alt="image-20210322131053215" style="zoom:150%;" />
+<img src="http://oss.jaronnie.com/image-20210322131053215.png" alt="image-20210322131053215" style="zoom:150%;" />
 

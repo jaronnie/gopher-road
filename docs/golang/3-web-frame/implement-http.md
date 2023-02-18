@@ -1,6 +1,4 @@
-重要的事再强调一遍，`也就是说，只要传入任何实现了 ServerHTTP接口的实例，所有的HTTP请求，就都交给了该实例处理了。`（这句话是从兔兔大佬那边抄过来的，也是最重要的一个结论）
-
-
+# implement http
 
 ```go
 package main
@@ -32,12 +30,4 @@ func main() {
    log.Fatal(http.ListenAndServe(":9999", engine))
 }
 ```
-
-
-
-## 参考链接
-
--  [极客兔兔](https://geektutu.com/post/gee.html)
-
-- [轩脉刃](https://www.cnblogs.com/yjf512/)
 

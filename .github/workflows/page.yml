@@ -2,9 +2,6 @@ name: Deploy
 
 on: [push]
 
-env:
-  TZ: Asia/Shanghai
-
 jobs:
   build:
 

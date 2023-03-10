@@ -19,6 +19,11 @@ the road to go!
 
 [CONTRIBUTE](CONTRIBUTE.md)
 
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/jaronnie/gopher-road.svg)](https://starchart.cc/jaronnie/gopher-road)
+
 ## LICENSE
 
 [MIT](LICENSE)

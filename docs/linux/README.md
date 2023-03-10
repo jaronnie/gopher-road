@@ -9,5 +9,7 @@
 * [linux 防火墙](linux-firewall.md)
 * [一个比 grep 更快高效的文本搜索命令 silversearcher-ag](silversearcher-ag.md)
 * [ssh 免密登录 && alias](ssh-free-password.md)
+* [uname](uname.md)
 * [为什么程序员需要学习 linux](why-need-linux.md)
+* [](xargs.md)
 

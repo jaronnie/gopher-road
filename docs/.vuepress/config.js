@@ -26,7 +26,7 @@ module.exports = {
     editLinks: true, // 底部增加编辑此页
     lastUpdated: 'Last Updated', // 最近更新时间
     logo: 'https://oss.jaronnie.com/logo.jpeg',
-    locales: {  
+    locales: {
       '/': {
        // 多语言下拉菜单的标题
        selectText: '选择语言',
@@ -90,6 +90,7 @@ module.exports = {
             children: [
               { title: 'http', path: '/golang/3-web-frame/http' },
               { title: 'implement-http', path: '/golang/3-web-frame/implement-http' },
+			  { title: 'http-unix-socket-tcp', path: '/golang/3-web-frame/http-unix-socket-tcp'},
               { title: 'gin', path: '/golang/3-web-frame/gin' },
             ]
           },

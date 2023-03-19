@@ -51,7 +51,8 @@ module.exports = {
          { text: 'kubernetes', link: '/kubernetes/', ariaLabel: '指南' },
          { text: '项目实战', link: '/project/', ariaLabel: '指南' },
          { text: '推荐阅读', link: '/recommendation/', ariaLabel: '指南' },
-         { text: 'Github', link: 'https://github.com/jaronnie/gopher-road' }
+         { text: 'Github', link: 'https://github.com/jaronnie/gopher-road' },
+         { text: 'Blog', link: 'https://blog.jaronnie.com' }
        ],
        sidebar: {
          '/golang/': [
@@ -102,6 +103,7 @@ module.exports = {
               { title: 'golang plugin 示例', path: '/golang/5-others/golang-plugin-example' },
               { title: 'golang 文件锁 flock', path: '/golang/5-others/golang-file-lock' },
               { title: 'golang plan9 汇编', path: '/golang/5-others/golang-plan9-example' },
+              { title: 'golang pprof', path: '/golang/5-others/golang-pprof' },
             ]
           },
          ],

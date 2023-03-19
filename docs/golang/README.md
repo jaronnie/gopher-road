@@ -35,6 +35,7 @@
 * [golang-file-lock](5-others/golang-file-lock.md)
 * [golang-plan9-example](5-others/golang-plan9-example.md)
 * [golang plugin example](5-others/golang-plugin-example.md)
+* [golang pprof usage](5-others/golang-pprof.md)
 * [golang-so-example](5-others/golang-so-example.md)
 * [graphql-quick-start](5-others/graphql-quick-start.md)
 

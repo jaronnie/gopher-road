@@ -62,6 +62,7 @@ module.exports = {
             children: [
               { title: 'Go time 时间处理', path: '/golang/1-standard-library/time' },
               { title: 'Go os 系统信息', path: '/golang/1-standard-library/os' },
+              { title: 'Go ast 语法解析', path: '/golang/1-standard-library/ast' },
             ]
           },
           {

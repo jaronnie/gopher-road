@@ -1,3 +1,0 @@
-# qiniu-cli
-
-qiniu-cli

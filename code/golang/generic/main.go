@@ -37,4 +37,10 @@ func main() {
 	fmt.Printf("Equal(1, 2): %v\n", Equal(1, 2))
 	fmt.Printf("NotEqual(\"a\", \"a\"): %v\n", NotEqual("a", "a"))
 	fmt.Printf("Max(9, 10): %v\n", Max(9, 10))
+
+	// filter
+	even := Filter([]int{1, 2, 3, 4, 5}, func(index int, value int) bool {
+		return value%2 == 0
+	})
+	fmt.Println(even)
 }

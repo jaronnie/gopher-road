@@ -166,16 +166,12 @@ module.exports = {
           'k8s-image-pull-policy'
          ],
          '/project/': [
-          'qiniu-cli',
-          'music-player',
-          'julenkv'
          ],
          '/recommendation/': [
           'go-code-guide',
           'go-books-read',
           'go-leetcode',
           'auto-blog',
-          'github-pages-custom-domain-cdn'
          ]
        }
       },

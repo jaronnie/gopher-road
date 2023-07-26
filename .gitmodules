@@ -1,0 +1,6 @@
+[submodule "code/middleware/traefik-example"]
+	path = code/middleware/traefik-example
+	url = https://github.com/jaronnie/traefik-example.git
+[submodule "code/middleware/caddy-example"]
+	path = code/middleware/caddy-example
+	url = https://github.com/jaronnie/caddy-example.git

@@ -1,6 +1,6 @@
 module github.com/jaronnie/gopher-road
 
-go 1.21rc3
+go 1.21.0
 
 require (
 	github.com/Masterminds/sprig/v3 v3.2.3
@@ -10,6 +10,7 @@ require (
 	github.com/hpcloud/tail v1.0.0
 	github.com/kevwan/mapreduce v1.1.1
 	github.com/prometheus/client_golang v1.16.0
+	github.com/samber/lo v1.38.1
 	github.com/spf13/cast v1.5.1
 	gopkg.in/guregu/null.v4 v4.0.0
 )
@@ -39,9 +40,10 @@ require (
 	github.com/prometheus/common v0.42.0 // indirect
 	github.com/prometheus/procfs v0.10.1 // indirect
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
-	github.com/samber/lo v1.38.1 // indirect
 	github.com/shopspring/decimal v1.2.0 // indirect
+	github.com/stretchr/testify v1.8.1 // indirect
 	github.com/temoto/robotstxt v1.1.1 // indirect
+	go.uber.org/goleak v1.2.0 // indirect
 	golang.org/x/crypto v0.3.0 // indirect
 	golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 // indirect
 	golang.org/x/net v0.7.0 // indirect

@@ -17,7 +17,6 @@
 * [Go 操作 excel 利器 excelize](2-third-party-library/excelize.md)
 * [mapreduce](2-third-party-library/mapreduce.md)
 * [对标 linux tail 命令的 Golang tail 包](2-third-party-library/tail.md)
-* [一个好的配置系统是什么样的？](2-third-party-library/viper.md)
 
 ## 3-web-frame
 

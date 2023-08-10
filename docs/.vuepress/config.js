@@ -73,7 +73,6 @@ module.exports = {
               { title: 'Go 操作 excel 利器 excelize', path: '/golang/2-third-party-library/excelize' },
               { title: 'Go 常用正则表达式 commonregex', path: '/golang/2-third-party-library/commonregex' },
               { title: 'Go 对标 linux tail 命令的 tail 包', path: '/golang/2-third-party-library/tail' },
-              { title: 'Go 使用 viper 最佳实践', path: '/golang/2-third-party-library/viper' },
               { title: 'Go 爬虫库 colly', path: '/golang/2-third-party-library/colly' },
               { title: 'cobra 终极指南', path: '/golang/2-third-party-library/cobra' },
             ]

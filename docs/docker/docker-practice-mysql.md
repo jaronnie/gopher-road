@@ -92,3 +92,8 @@ func main() {
 
 <img src="http://oss.jaronnie.com/image-20210312162544468.png" alt="image-20210312162544468" style="zoom:150%;" />
 
+## 备份
+
+```shell
+mysqldump -u root -p123456 --host 127.0.0.1 --port 3306 --databases hello > hello.sql
+```
